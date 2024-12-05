@@ -60,9 +60,50 @@ class Fetcher:
 
     def _filter_us_data(self, rows):
         """
-        Dummy method for now. Replace this with actual filtering logic.
+        Filter rows for US data (Currency: USD) and extract relevant information, including time.
+        :param rows: List of HTML rows from the economic calendar table.
+        :return: List of dictionaries containing filtered US data with event time.
         """
-        return []
+        filtered_data = []
+        for row in rows:
+            try:
+                # Extract time
+                time_cell = row.find('td', {"class": "first left time"}) or row.find('td', {"class": "time"})
+                time = time_cell.text.strip() if time_cell else "Unknown Time"
+
+                # Extract currency
+                currency_cell = row.find('td', {"class": "flagCur"})
+                currency = currency_cell.text.strip() if currency_cell else None
+                if currency != "USD":
+                    continue
+
+                # Extract event
+                event_cell = row.find('td', {"class": "event"})
+                event = event_cell.text.strip() if event_cell else "Unknown Event"
+
+                # Extract actual, forecast, and previous values
+                actual_cell = row.find('td', {"class": "bold"})
+                forecast_cell = row.find('td', {"class": "fore"})
+                previous_cell = row.find('td', {"class": "prev"})
+                
+                actual = self._parse_value(actual_cell.text.strip()) if actual_cell else None
+                forecast = self._parse_value(forecast_cell.text.strip()) if forecast_cell else None
+                previous = self._parse_value(previous_cell.text.strip()) if previous_cell else None
+
+                # Append parsed data
+                filtered_data.append({
+                    "time": time,
+                    "currency": currency,
+                    "event": event,
+                    "actual": actual,
+                    "forecast": forecast,
+                    "previous": previous,
+                })
+            except Exception as e:
+                log_error(f"Error parsing row: {e}")
+
+        return filtered_data
+
 
 # Add __main__ function for standalone execution
 if __name__ == "__main__":
