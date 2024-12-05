@@ -23,7 +23,7 @@ class Fetcher:
         """
         Convert a time string from the base timezone to the target timezone.
         :param time_str: Time string (e.g., "08:15").
-        :param base_timezone: The base timezone of the time string.
+        :param base_timezone: The base timezone of the time string. base_timezone="Etc/GMT+5" corresponds to EST. The website uses this by default
         :return: Converted time string in the target timezone or None if parsing fails.
         """
         try:
@@ -114,7 +114,8 @@ class Fetcher:
 
             # Optionally save fetched HTML to a file
             if save_sample:
-                self.save_html_to_file(html, file_path="sample/economic_calendar.html")
+                file_path = f"sample/economic_calendar_{datetime.now().strftime('%Y%m%d_%H%M%S')}.html"
+                self.save_html_to_file(html, file_path)
 
             soup = BeautifulSoup(html, "html.parser")
             table = soup.find('table', {"id": "economicCalendarData"})
@@ -146,6 +147,8 @@ class Fetcher:
 
 # Add __main__ function for standalone execution
 if __name__ == "__main__":
-    fetcher = Fetcher("https://www.investing.com/economic-calendar/")
+    from config import Config
+    base_url = Config.BASE_URL 
+    fetcher = Fetcher(base_url) # Use default EST timezone
     print("Fetching data and saving to ./sample/economic_calendar.html...")
     fetcher.fetch_data(save_sample=True)

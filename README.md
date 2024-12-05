@@ -18,7 +18,6 @@ project/
     └── test_fetcher.py # Tests data fetching and filtering functionality.
 ```
 
-
 ## **Modules Overview**
 
 ### 1. **`fetcher.py`**
@@ -74,10 +73,16 @@ project/
 ### Prerequisites
 1. Install dependencies:
 ```bash
-   pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
-Steps
+2. Setup .env file
+Copy .env.example to .env
+```bash
+cp .env.example .env
+```
+
+### Steps
 Execute the main script:
 
 ```bash

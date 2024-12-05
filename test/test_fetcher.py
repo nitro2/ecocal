@@ -5,9 +5,10 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from fetcher import Fetcher
+from config import Config
 
 def test_fetcher():
-    base_url = "https://www.investing.com/economic-calendar/"
+    base_url = Config.BASE_URL 
     fetcher = Fetcher(base_url, target_timezone="Asia/Ho_Chi_Minh")
 
     print("Fetching data...")
