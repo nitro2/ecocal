@@ -104,6 +104,17 @@ class Fetcher:
 
         return filtered_data
 
+    def _parse_value(self, value):
+        """
+        Convert string values to appropriate numerical format.
+        :param value: Raw value string from the table (e.g., "6.3%", "1,000").
+        :return: Parsed float or None if parsing fails.
+        """
+        try:
+            # Remove common formatting characters like commas and percentages
+            return float(value.replace(',', '').replace('%', ''))
+        except ValueError:
+            return None
 
 # Add __main__ function for standalone execution
 if __name__ == "__main__":
