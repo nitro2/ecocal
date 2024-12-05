@@ -8,7 +8,7 @@ from fetcher import Fetcher
 
 def test_fetcher():
     base_url = "https://www.investing.com/economic-calendar/"
-    fetcher = Fetcher(base_url)
+    fetcher = Fetcher(base_url, target_timezone="Asia/Ho_Chi_Minh")
 
     print("Fetching data...")
     data = fetcher.fetch_data()
