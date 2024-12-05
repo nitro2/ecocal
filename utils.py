@@ -1,5 +1,6 @@
 import logging
 from datetime import datetime
+from bs4 import BeautifulSoup
 
 # Set up logging configuration
 logging.basicConfig(
@@ -33,4 +34,18 @@ def parse_time(time_str, format="%H:%M"):
         return datetime.strptime(time_str, format).time()
     except ValueError as e:
         log_error(f"Time parsing error: {e}")
+        return None
+
+def load_html_from_file(file_path):
+    """
+    Load and parse HTML content from a file.
+    :param file_path: Path to the HTML file.
+    :return: BeautifulSoup object or None if loading fails.
+    """
+    try:
+        with open(file_path, "rb") as file:
+            html = file.read()
+        return BeautifulSoup(html, "html.parser")
+    except Exception as e:
+        log_error(f"Failed to load HTML from {file_path}: {e}")
         return None
