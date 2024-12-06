@@ -2,6 +2,7 @@ import logging
 from datetime import datetime
 from bs4 import BeautifulSoup
 from tabulate import tabulate
+from config import Config
 
 # Set up logging configuration
 logging.basicConfig(
@@ -57,21 +58,37 @@ def prettify_rows(rows, signals=None):
     :param rows: List of dictionaries containing row data.
     :param signals: Optional list of signals corresponding to each row.
     """
-    headers = ["time", "currency", "event", "actual", "forecast", "previous", "signal"]
+    # Apply currency filter if PRINT_CURRENCIES is not None
+    if Config.PRINT_CURRENCIES:
+        rows = [
+            row
+            for row in rows
+            if row.get("currency") in Config.PRINT_CURRENCIES
+        ]
 
-    # Prepare rows for tabulation
+    # If no rows match the filter, exit early
+    if not rows:
+        print("No rows to display after applying currency filter.")
+        return
+
+    # Prepare headers and table data
+    headers = ["time", "currency", "event", "importance", "actual", "forecast", "previous", "signal"]
     table_data = []
     for idx, row in enumerate(rows):
         signal = signals[idx] if signals else "_"
+        importance = "*" * row.get("importance", 0)  # Convert numeric importance to * symbols
         table_data.append([
             row.get("time", "_"),
             row.get("currency", "_"),
             row.get("event", "_"),
+            importance,
             row.get("actual", "_") if row.get("actual") is not None else "_",
             row.get("forecast", "_") if row.get("forecast") is not None else "_",
             row.get("previous", "_") if row.get("previous") is not None else "_",
-            signal.value,
+            signal,
         ])
 
-    # Print the formatted table
-    print(tabulate(table_data, headers=headers, tablefmt="grid"))
+    # Print the formatted table if PRINT_TABLE is True
+    if Config.PRINT_TABLE:
+        print(tabulate(table_data, headers=headers, tablefmt="grid"))
+

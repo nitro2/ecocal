@@ -22,7 +22,6 @@ class Config:
     raw_interval = os.getenv("SCHEDULE_INTERVAL", "1m").lower()
     INTERVAL_VALUE = None
     INTERVAL_UNIT = None
-
     if raw_interval.endswith("s"):  # Seconds
         INTERVAL_VALUE = int(raw_interval[:-1])
         INTERVAL_UNIT = "seconds"
@@ -38,3 +37,12 @@ class Config:
     else:
         INTERVAL_VALUE = 1
         INTERVAL_UNIT = "minutes"  # Default to 1 minute
+
+    # Read PRINT_TABLE and convert to boolean
+    PRINT_TABLE = os.getenv("PRINT_TABLE", "False").lower() == "true"
+
+    # Read PRINT_CURRENCIES and parse into a list
+    raw_currencies = os.getenv("PRINT_CURRENCIES", "ALL")
+    PRINT_CURRENCIES = (
+        None if raw_currencies.upper() == "ALL" else raw_currencies.split(",")
+    )

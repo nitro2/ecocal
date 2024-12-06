@@ -51,5 +51,5 @@ class SignalProcessor:
         # Aggregate by counting occurrences of each signal
         signal_counts = {signal: signals.count(signal) for signal in set(signals)}
         most_common_signal = max(signal_counts, key=signal_counts.get)
-        
+
         return most_common_signal

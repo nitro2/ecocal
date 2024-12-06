@@ -42,29 +42,33 @@ class Fetcher:
             log_error(f"Time conversion error: {e}")
             return None
 
-    def _filter_us_data(self, rows):
+    def _extract_data(self, rows):
         """
-        Filter rows for US data (Currency: USD) and adjust timezones.
+        Extract relevant information from the rows, including importance level.
         :param rows: List of HTML rows from the economic calendar table.
-        :return: List of dictionaries containing filtered US data with adjusted times.
+        :return: List of dictionaries containing extracted data.
         """
-        filtered_data = []
+        extracted_data = []
         for row in rows:
             try:
-                # Extract and convert time
-                time_cell = row.find('td', {"class": "first left time"}) or row.find('td', {"class": "time"})
-                raw_time = time_cell.text.strip() if time_cell else None
-                time = self._convert_time(raw_time) if raw_time else "Unknown Time"
-
                 # Extract currency
                 currency_cell = row.find('td', {"class": "flagCur"})
                 currency = currency_cell.text.strip() if currency_cell else None
-                if currency != "USD":
-                    continue
+
+                # Extract time
+                time_cell = row.find('td', {"class": "first left time"}) or row.find('td', {"class": "time"})
+                time = time_cell.text.strip() if time_cell else None
 
                 # Extract event
                 event_cell = row.find('td', {"class": "event"})
                 event = event_cell.text.strip() if event_cell else "Unknown Event"
+
+                # Extract importance level
+                importance_cell = row.find('td', {"class": "sentiment"})
+                if importance_cell:
+                    importance = len(importance_cell.find_all("i", {"class": "grayFullBullishIcon"}))
+                else:
+                    importance = 0  # Default to 0 if importance level is missing
 
                 # Extract actual, forecast, and previous values
                 actual_cell = row.find('td', {"class": "bold"})
@@ -76,10 +80,11 @@ class Fetcher:
                 previous = self._parse_value(previous_cell.text.strip()) if previous_cell else None
 
                 # Append parsed data
-                filtered_data.append({
+                extracted_data.append({
                     "time": time,
                     "currency": currency,
                     "event": event,
+                    "importance": importance,
                     "actual": actual,
                     "forecast": forecast,
                     "previous": previous,
@@ -87,7 +92,7 @@ class Fetcher:
             except Exception as e:
                 log_error(f"Error parsing row: {e}")
 
-        return filtered_data
+        return extracted_data
 
     def _parse_value(self, value):
         """
@@ -124,7 +129,7 @@ class Fetcher:
                 return []
 
             rows = table.find_all('tr', {"class": "js-event-item"})
-            return self._filter_us_data(rows)
+            return self._extract_data(rows)
         except HTTPError as e:
             log_error(f"HTTP Error: {e.code}")
         except Exception as e:
