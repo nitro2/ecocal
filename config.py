@@ -8,6 +8,9 @@ class Config:
     # Read TARGET_TIMEZONE from .env file, default to UTC if not found
     TARGET_TIMEZONE = os.getenv("TARGET_TIMEZONE", "UTC")
 
+    # Read BASE_TIMEZONE from .env file
+    BASE_TIMEZONE = os.getenv("BASE_TIMEZONE", "Etc/GMT+5")  # Default to GMT-5
+
     # Read CRITICAL_TIMES from .env, and split the string into a list of dictionaries
     critical_times_str = os.getenv("CRITICAL_TIMES", "")
     CRITICAL_TIMES = [

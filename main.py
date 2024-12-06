@@ -21,6 +21,8 @@ def run_task():
     else:
         print("No data fetched.")
 
+    print("Task complete.")
+
 if __name__ == "__main__":
     scheduler = Scheduler()
     run_task()  # Run the task once before scheduling

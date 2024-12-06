@@ -2,6 +2,7 @@ import logging
 from datetime import datetime
 from bs4 import BeautifulSoup
 from tabulate import tabulate
+from pytz import timezone
 from config import Config
 
 # Set up logging configuration
@@ -52,9 +53,30 @@ def load_html_from_file(file_path):
         log_error(f"Failed to load HTML from {file_path}: {e}")
         return None
 
+def convert_time_to_timezone(time_str):
+    """
+    Convert a time string from the base timezone to the target timezone specified in Config.
+    :param time_str: Time string (e.g., "08:15").
+    :return: Converted time string in the target timezone.
+    """
+    try:
+        base_tz = timezone(Config.BASE_TIMEZONE)
+        target_tz = timezone(Config.TARGET_TIMEZONE)
+
+        # Parse the time string to a datetime object
+        naive_time = datetime.strptime(time_str, "%H:%M")
+        localized_time = base_tz.localize(naive_time)
+
+        # Convert to target timezone
+        target_time = localized_time.astimezone(target_tz)
+        return target_time.strftime("%H:%M")  # Return formatted time string
+    except Exception as e:
+        print(f"Error in time conversion: {e}. While converting {time_str}")
+        return time_str  # Return original time if conversion fails
+
 def prettify_rows(rows, signals=None):
     """
-    Prettify and print rows with alignment for console output.
+    Prettify and print rows with alignment for console output, converting times to the target timezone.
     :param rows: List of dictionaries containing row data.
     :param signals: Optional list of signals corresponding to each row.
     """
@@ -72,13 +94,21 @@ def prettify_rows(rows, signals=None):
         return
 
     # Prepare headers and table data
-    headers = ["Time", "Curr" , "Imp.", "Event", "Actual", "Forecast", "Previous", "Signal"]
+    headers = ["Time", "Curr", "Imp.", "Event", "Actual", "Forecast", "Previous", "Signal"]
     table_data = []
     for idx, row in enumerate(rows):
         signal = signals[idx] if signals else "_"
         importance = "*" * row.get("importance", 0)  # Convert numeric importance to * symbols
+
+        # Convert time using the convert_time_to_timezone function
+        t = row.get("time")
+        if t:
+            time = convert_time_to_timezone(t)
+        else:
+            time = "_"
+
         table_data.append([
-            row.get("time", "_"),
+            time,
             row.get("currency", "_"),
             importance,
             row.get("event", "_"),
@@ -91,4 +121,3 @@ def prettify_rows(rows, signals=None):
     # Print the formatted table if PRINT_TABLE is True
     if Config.PRINT_TABLE:
         print(tabulate(table_data, headers=headers, tablefmt="grid"))
-

@@ -45,9 +45,7 @@ class Scheduler:
         print("Running scheduled tasks...")
         if Config.INTERVAL_UNIT == "seconds":
             while True:
-                print("INTERVAL_UNIT1")
                 schedule.run_pending()
-                print("INTERVAL_UNIT2")
                 time.sleep(Config.INTERVAL_VALUE)
         else:
             while True:
