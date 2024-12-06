@@ -3,38 +3,23 @@ from processor import SignalProcessor
 from scheduler import Scheduler
 from config import Config
 
-def main():
-    try:
-        # Initialize components
-        fetcher = Fetcher(Config.BASE_URL)
-        processor = SignalProcessor()
-        scheduler = Scheduler()
+def run_task():
+    """
+    Defines the task to fetch and process data, then output the result.
+    """
+    fetcher = Fetcher(target_timezone=Config.TARGET_TIMEZONE)
+    processor = SignalProcessor()
 
-        # Define the main task
-        def run_task():
-            print("Fetching data...")
-            data = fetcher.fetch_data()
-
-            if not data:
-                print("No data available or an error occurred.")
-                return
-
-            print("Processing signals...")
-            for row in data:
-                # Per-row signal processing
-                row_signal = processor.classify_signal(row['actual'], row['forecast'], row['previous'])
-                print(f"Event: {row['event']} -> Signal: {row_signal}")
-
-            # Aggregate signals for overlapping events
-            overall_signal = processor.aggregate_signals(data)
-            print(f"Overall Signal: {overall_signal}")
-
-        # Schedule tasks
-        scheduler.schedule_tasks(run_task)
-        scheduler.run_forever()
-
-    except Exception as e:
-        print(f"An unexpected error occurred: {e}")
+    print("Running task...")
+    data = fetcher.fetch_data()
+    if data:
+        # Aggregate and classify signals for the data
+        overall_signal = processor.aggregate_signals(data)
+        print(f"Overall Signal: {overall_signal}")
+    else:
+        print("No data fetched.")
 
 if __name__ == "__main__":
-    main()
+    scheduler = Scheduler()
+    scheduler.schedule_tasks(run_task)  # Pass the task function to the scheduler
+    scheduler.run_forever()
