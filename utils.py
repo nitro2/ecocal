@@ -56,22 +56,27 @@ def load_html_from_file(file_path):
 def convert_time_to_timezone(time_str):
     """
     Convert a time string from the base timezone to the target timezone specified in Config.
-    :param time_str: Time string (e.g., "08:15").
+    :param time_str: Time string (e.g., "15:30").
     :return: Converted time string in the target timezone.
     """
     try:
-        base_tz = timezone(Config.BASE_TIMEZONE)
+        base_tz = timezone(Config.BASE_TIMEZONE)  # Use BASE_TIMEZONE from .env
         target_tz = timezone(Config.TARGET_TIMEZONE)
 
-        # Parse the time string to a datetime object
-        naive_time = datetime.strptime(time_str, "%H:%M")
-        localized_time = base_tz.localize(naive_time)
+        # Add today's date to the time string to avoid year 1900 issues
+        today = datetime.now().date()
+        datetime_with_date = datetime.strptime(f"{today} {time_str}", "%Y-%m-%d %H:%M")
 
-        # Convert to target timezone
+        # Localize the datetime object to the base timezone
+        localized_time = base_tz.localize(datetime_with_date, is_dst=None)
+
+        # Convert to the target timezone
         target_time = localized_time.astimezone(target_tz)
-        return target_time.strftime("%H:%M")  # Return formatted time string
+
+        # Return formatted time string
+        return target_time.strftime("%H:%M")
     except Exception as e:
-        print(f"Error in time conversion: {e}. While converting {time_str}")
+        print(f"Error in time conversion: {e}")
         return time_str  # Return original time if conversion fails
 
 def prettify_rows(rows, signals=None):

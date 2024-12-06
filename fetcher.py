@@ -19,29 +19,6 @@ class Fetcher:
         }
         self.target_timezone = target_timezone
 
-    def _convert_time(self, time_str, base_timezone="Etc/GMT+5"):
-        """
-        Convert a time string from the base timezone to the target timezone.
-        :param time_str: Time string (e.g., "08:15").
-        :param base_timezone: The base timezone of the time string. base_timezone="Etc/GMT+5" corresponds to EST. The website uses this by default
-        :return: Converted time string in the target timezone or None if parsing fails.
-        """
-        try:
-            base_tz = timezone(base_timezone)
-            target_tz = timezone(self.target_timezone)
-
-            # Parse time string into a datetime object
-            current_date = datetime.now().date()
-            naive_time = datetime.strptime(time_str, "%H:%M")
-            localized_time = base_tz.localize(datetime.combine(current_date, naive_time.time()))
-
-            # Convert to the target timezone
-            target_time = localized_time.astimezone(target_tz)
-            return target_time.strftime("%H:%M")
-        except Exception as e:
-            log_error(f"Time conversion error: {e}")
-            return None
-
     def _extract_data(self, rows):
         """
         Extract relevant information from the rows, including importance level.

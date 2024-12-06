@@ -1,6 +1,6 @@
 import os
 import argparse
-from utils import load_html_from_file
+from utils import load_html_from_file, prettify_rows
 from fetcher import Fetcher
 
 def test_sample_html_parsing(input_file):
@@ -27,12 +27,13 @@ def test_sample_html_parsing(input_file):
     # Extract rows from the table
     rows = table.find_all('tr', {"class": "js-event-item"})
     fetcher = Fetcher("https://www.investing.com/economic-calendar/", target_timezone="Asia/Ho_Chi_Minh")  # URL is not used here
-    parsed_data = fetcher._filter_us_data(rows)
+    parsed_data = fetcher._extract_data(rows)
 
     # Print the parsed data for verification
-    print("Parsed data from sample HTML:")
-    for entry in parsed_data:
-        print(entry)
+    # print("Parsed data from sample HTML:")
+    # for entry in parsed_data:
+    #     print(entry)
+    prettify_rows(parsed_data)
 
 def main():
     # Parse command line arguments
