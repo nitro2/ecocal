@@ -17,6 +17,7 @@ class Scheduler:
 
         if unit == "seconds":
             print(f"Task scheduled to run every {interval} seconds.")
+            schedule.every(interval).seconds.do(task_function)
         elif unit == "minutes":
             schedule.every(interval).minutes.do(task_function)
             print(f"Task scheduled to run every {interval} minutes.")
@@ -41,9 +42,12 @@ class Scheduler:
         """
         Runs the scheduled tasks indefinitely.
         """
+        print("Running scheduled tasks...")
         if Config.INTERVAL_UNIT == "seconds":
             while True:
+                print("INTERVAL_UNIT1")
                 schedule.run_pending()
+                print("INTERVAL_UNIT2")
                 time.sleep(Config.INTERVAL_VALUE)
         else:
             while True:
