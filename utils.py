@@ -40,20 +40,6 @@ def parse_time(time_str, format="%H:%M"):
         log_error(f"Time parsing error: {e}")
         return None
 
-def load_html_from_file(file_path):
-    """
-    Load and parse HTML content from a file.
-    :param file_path: Path to the HTML file.
-    :return: BeautifulSoup object or None if loading fails.
-    """
-    try:
-        with open(file_path, "rb") as file:
-            html = file.read()
-        return BeautifulSoup(html, "html.parser")
-    except Exception as e:
-        log_error(f"Failed to load HTML from {file_path}: {e}")
-        return None
-
 def convert_time_to_timezone(time_str):
     """
     Convert a time string from the base timezone to the target timezone specified in Config.
@@ -82,8 +68,8 @@ def convert_time_to_timezone(time_str):
 
 def prettify_rows(rows, signals=None):
     """
-    Prettify and print rows with alignment for console output, optionally adding colors.
-    :param rows: List of dictionaries containing row data.
+    Prettify and print rows with alignment for console output, including Positive/Negative (P/N) column and conditional coloring.
+    :param rows: List of dictionaries containing row data (including 'pn_indicator').
     :param signals: Optional list of signals corresponding to each row.
     """
     # Apply currency filter if PRINT_CURRENCIES is not None
@@ -100,7 +86,7 @@ def prettify_rows(rows, signals=None):
         return
 
     # Define headers
-    headers = ["Time", "Curr", "Imp.", "Event", "Actual", "Forecast", "Previous", "Signal"]
+    headers = ["Time", "Curr", "Imp.", "Event", "Actual", "Forecast", "Previous", "Signal", "P/N"]
 
     # Prepare table data
     table_data = []
@@ -128,16 +114,33 @@ def prettify_rows(rows, signals=None):
         if Config.USE_COLORS:
             event = Fore.CYAN + event + Style.RESET_ALL
 
+        # Style Actual value based on P/N logic
+        actual = row.get("actual", "_")
+        forecast = row.get("forecast", None)
+        pn_indicator = row.get("pn_indicator", "_")
+        if Config.USE_COLORS and actual != "_" and forecast is not None:
+            if pn_indicator == "Positive":
+                if actual > forecast:
+                    actual = Fore.GREEN + str(actual) + Style.RESET_ALL
+                elif actual < forecast:
+                    actual = Fore.RED + str(actual) + Style.RESET_ALL
+            elif pn_indicator == "Negative":
+                if actual > forecast:
+                    actual = Fore.RED + str(actual) + Style.RESET_ALL
+                elif actual < forecast:
+                    actual = Fore.GREEN + str(actual) + Style.RESET_ALL
+
         # Add row to table
         table_data.append([
             row.get("time", "_"),
             row.get("currency", "_"),
             importance,
             event,
-            row.get("actual", "_") if row.get("actual") is not None else "_",
+            actual,
             row.get("forecast", "_") if row.get("forecast") is not None else "_",
             row.get("previous", "_") if row.get("previous") is not None else "_",
             signal,
+            pn_indicator[0] if pn_indicator != "_" else "_"  # Add "P" or "N" to the P/N column
         ])
 
     # Print the formatted table if PRINT_TABLE is True

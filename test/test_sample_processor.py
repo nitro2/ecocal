@@ -1,10 +1,16 @@
+import sys
+import os
+from fetcher import Fetcher
+from processor import SignalProcessor
+from utils import prettify_rows
+from config import Config
+
 import os
 import argparse
 from utils import prettify_rows
 from fetcher import Fetcher
-from config import Config
 
-def test_sample_html_parsing(input_file):
+def test_sample_processor(input_file):
     """
     Test parsing of the sample HTML file provided as input.
     """
@@ -13,14 +19,19 @@ def test_sample_html_parsing(input_file):
         print(f"Sample file not found: {input_file}")
         return
 
-    fetcher = Fetcher(Config.BASE_URL, target_timezone=Config.TARGET_TIMEZONE)
-    data = fetcher.read_data(input_file)
 
-    # Print the parsed data for verification
-    # print("Parsed data from sample HTML:")
-    # for entry in parsed_data:
-    #     print(entry)
-    prettify_rows(data)
+    fetcher = Fetcher(Config.BASE_URL, target_timezone=Config.TARGET_TIMEZONE)
+    rows = fetcher.read_data(input_file)
+    processor = SignalProcessor()
+
+    # Add Positive/Negative indicators to rows
+    rows_with_pn = processor.add_pn_indicator(rows)
+
+    # Aggregate signals and prettify rows
+    aggregated_signal = processor.aggregate_signals(rows_with_pn)
+    print(f"Overall Signal: {aggregated_signal}")
+
+
 
 def main():
     # Parse command line arguments
@@ -29,7 +40,7 @@ def main():
     args = parser.parse_args()
 
     # Run the parsing function with the provided file
-    test_sample_html_parsing(args.input_file)
+    test_sample_processor(args.input_file)
 
 if __name__ == "__main__":
     main()

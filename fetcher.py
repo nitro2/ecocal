@@ -19,7 +19,7 @@ class Fetcher:
         }
         self.target_timezone = target_timezone
 
-    def _extract_data(self, rows):
+    def extract_data(self, rows):
         """
         Extract relevant information from the rows, including importance level.
         :param rows: List of HTML rows from the economic calendar table.
@@ -83,11 +83,11 @@ class Fetcher:
         except ValueError:
             return None
 
-    def fetch_data(self, save_sample=False):
+    def fetch_html(self, save_sample=False):
         """
-        Fetch and parse economic calendar data.
+        Fetch HTML content from the base URL.
         :param save_sample: If True, save fetched HTML content to a file.
-        :return: List of dictionaries containing event data filtered for US indices.
+        :return: BeautifulSoup object containing the parsed HTML.
         """
         try:
             req = urllib.request.Request(self.base_url, headers=self.headers)
@@ -100,18 +100,32 @@ class Fetcher:
                 self.save_html_to_file(html, file_path)
 
             soup = BeautifulSoup(html, "html.parser")
-            table = soup.find('table', {"id": "economicCalendarData"})
-            if not table:
-                log_error("Economic calendar table not found.")
-                return []
 
-            rows = table.find_all('tr', {"class": "js-event-item"})
-            return self._extract_data(rows)
+            return soup
         except HTTPError as e:
             log_error(f"HTTP Error: {e.code}")
         except Exception as e:
             log_error(f"Error fetching data: {e}")
         return []
+    
+    def fetch_data(self, save_sample=False):
+        """
+        Fetch and process economic calendar data.
+        :param save_sample: If True, save fetched HTML content to a file.
+        :return: List of dictionaries containing event data filtered for US indices.
+        """
+        soup = self.fetch_html(save_sample)
+        if not soup:
+            return []
+
+        table = soup.find('table', {"id": "economicCalendarData"})
+        if not table:
+            log_error("Economic calendar table not found.")
+            return []
+
+        rows = table.find_all('tr', {"class": "js-event-item"})
+        return self.extract_data(rows)
+
 
     def save_html_to_file(self, html, file_path="sample/economic_calendar.html"):
         """
@@ -126,6 +140,48 @@ class Fetcher:
             print(f"HTML content saved to {file_path}")
         except Exception as e:
             log_error(f"Failed to save HTML content: {e}")
+
+    def load_html_from_file(self, file_path):
+        """
+        Load and parse HTML content from a file.
+        :param file_path: Path to the HTML file.
+        :return: BeautifulSoup object or None if loading fails.
+        """
+        try:
+            with open(file_path, "rb") as file:
+                html = file.read()
+            return BeautifulSoup(html, "html.parser")
+        except Exception as e:
+            log_error(f"Failed to load HTML from {file_path}: {e}")
+            return None
+
+
+    def read_data(self, file_path):
+        """
+        Read and parse HTML content from a file.
+        :param file_path: Path to the HTML file.
+        :return: BeautifulSoup object or None if loading fails.
+        """
+        try:
+            # Load the sample HTML
+            soup = self.load_html_from_file(file_path)
+            if not soup:
+                print("Failed to load or parse the sample HTML file.")
+                return
+
+            # Simulate the Fetcher processing the loaded HTML
+            table = soup.find('table', {"id": "economicCalendarData"})
+            if not table:
+                print("Economic calendar table not found in the sample file.")
+                return []
+
+            # Extract rows from the table
+            rows = table.find_all('tr', {"class": "js-event-item"})
+            return self.extract_data(rows)
+
+        except Exception as e:
+            log_error(f"Failed to load HTML from {file_path}: {e}")
+            return None
 
 # Add __main__ function for standalone execution
 if __name__ == "__main__":
