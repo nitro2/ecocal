@@ -1,4 +1,5 @@
 from enum import Enum
+from utils import prettify_rows
 
 class SignalLevel(Enum):
     STRONG_BUY = "Strong Buy"
@@ -43,7 +44,10 @@ class SignalProcessor:
         :return: The overall signal for all rows.
         """
         signals = [self.classify_signal(row['actual'], row['forecast'], row['previous']) for row in rows]
-        
+
+        # Print prettified rows with signals
+        prettify_rows(rows, signals)
+
         # Aggregate by counting occurrences of each signal
         signal_counts = {signal: signals.count(signal) for signal in set(signals)}
         most_common_signal = max(signal_counts, key=signal_counts.get)

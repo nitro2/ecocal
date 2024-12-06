@@ -1,6 +1,7 @@
 import logging
 from datetime import datetime
 from bs4 import BeautifulSoup
+from tabulate import tabulate
 
 # Set up logging configuration
 logging.basicConfig(
@@ -49,3 +50,28 @@ def load_html_from_file(file_path):
     except Exception as e:
         log_error(f"Failed to load HTML from {file_path}: {e}")
         return None
+
+def prettify_rows(rows, signals=None):
+    """
+    Prettify and print rows with alignment for console output.
+    :param rows: List of dictionaries containing row data.
+    :param signals: Optional list of signals corresponding to each row.
+    """
+    headers = ["time", "currency", "event", "actual", "forecast", "previous", "signal"]
+
+    # Prepare rows for tabulation
+    table_data = []
+    for idx, row in enumerate(rows):
+        signal = signals[idx] if signals else "_"
+        table_data.append([
+            row.get("time", "_"),
+            row.get("currency", "_"),
+            row.get("event", "_"),
+            row.get("actual", "_") if row.get("actual") is not None else "_",
+            row.get("forecast", "_") if row.get("forecast") is not None else "_",
+            row.get("previous", "_") if row.get("previous") is not None else "_",
+            signal.value,
+        ])
+
+    # Print the formatted table
+    print(tabulate(table_data, headers=headers, tablefmt="grid"))
