@@ -49,3 +49,6 @@ class Config:
     PRINT_CURRENCIES = (
         None if raw_currencies.upper() == "ALL" else raw_currencies.split(",")
     )
+
+    # Use colors in the output table
+    USE_COLORS = os.getenv("USE_COLORS", "True").lower() == "true"

@@ -2,6 +2,7 @@ import logging
 from datetime import datetime
 from bs4 import BeautifulSoup
 from tabulate import tabulate
+from colorama import Fore, Style
 from pytz import timezone
 from config import Config
 
@@ -81,7 +82,7 @@ def convert_time_to_timezone(time_str):
 
 def prettify_rows(rows, signals=None):
     """
-    Prettify and print rows with alignment for console output, converting times to the target timezone.
+    Prettify and print rows with alignment for console output, optionally adding colors.
     :param rows: List of dictionaries containing row data.
     :param signals: Optional list of signals corresponding to each row.
     """
@@ -98,25 +99,41 @@ def prettify_rows(rows, signals=None):
         print("No rows to display after applying currency filter.")
         return
 
-    # Prepare headers and table data
+    # Define headers
     headers = ["Time", "Curr", "Imp.", "Event", "Actual", "Forecast", "Previous", "Signal"]
+
+    # Prepare table data
     table_data = []
     for idx, row in enumerate(rows):
+        # Style importance
+        importance = "*" * row.get("importance", 0)
+        if Config.USE_COLORS:
+            if row.get("importance", 0) == 3:
+                importance = Fore.RED + importance + Style.RESET_ALL
+            elif row.get("importance", 0) == 2:
+                importance = Fore.YELLOW + importance + Style.RESET_ALL
+            elif row.get("importance", 0) == 1:
+                importance = Fore.GREEN + importance + Style.RESET_ALL
+
+        # Style signal
         signal = signals[idx] if signals else "_"
-        importance = "*" * row.get("importance", 0)  # Convert numeric importance to * symbols
+        if Config.USE_COLORS:
+            if signal == "Strong Buy":
+                signal = Fore.GREEN + signal + Style.RESET_ALL
+            elif signal == "Strong Sell":
+                signal = Fore.RED + signal + Style.RESET_ALL
 
-        # Convert time using the convert_time_to_timezone function
-        t = row.get("time")
-        if t:
-            time = convert_time_to_timezone(t)
-        else:
-            time = "_"
+        # Style event
+        event = row.get("event", "_")
+        if Config.USE_COLORS:
+            event = Fore.CYAN + event + Style.RESET_ALL
 
+        # Add row to table
         table_data.append([
-            time,
+            row.get("time", "_"),
             row.get("currency", "_"),
             importance,
-            row.get("event", "_"),
+            event,
             row.get("actual", "_") if row.get("actual") is not None else "_",
             row.get("forecast", "_") if row.get("forecast") is not None else "_",
             row.get("previous", "_") if row.get("previous") is not None else "_",
