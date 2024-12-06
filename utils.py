@@ -72,7 +72,7 @@ def prettify_rows(rows, signals=None):
         return
 
     # Prepare headers and table data
-    headers = ["time", "currency", "event", "importance", "actual", "forecast", "previous", "signal"]
+    headers = ["Time", "Curr" , "Imp.", "Event", "Actual", "Forecast", "Previous", "Signal"]
     table_data = []
     for idx, row in enumerate(rows):
         signal = signals[idx] if signals else "_"
@@ -80,8 +80,8 @@ def prettify_rows(rows, signals=None):
         table_data.append([
             row.get("time", "_"),
             row.get("currency", "_"),
-            row.get("event", "_"),
             importance,
+            row.get("event", "_"),
             row.get("actual", "_") if row.get("actual") is not None else "_",
             row.get("forecast", "_") if row.get("forecast") is not None else "_",
             row.get("previous", "_") if row.get("previous") is not None else "_",
