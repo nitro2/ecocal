@@ -18,6 +18,36 @@ project/
     └── test_fetcher.py # Tests data fetching and filtering functionality.
 ```
 
+## **How to Run**
+
+1. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+2. Setup .env file
+Copy .env.example to .env
+```bash
+cp .env.example .env
+```
+
+3. Execute the main script:
+
+```bash
+python main.py
+```
+
+### Generate HTML sample:
+```bash
+python fetcher.py
+```
+
+Run individual tests (e.g., for fetcher.py):
+
+```bash
+python test/test_fetcher.py
+```
+
 ## **Modules Overview**
 
 ### 1. **`fetcher.py`**
@@ -67,33 +97,6 @@ project/
   1. Fetch data using `Fetcher`.
   2. Process data using `SignalProcessor`.
   3. Schedule periodic execution using `Scheduler`.
-
-## **How to Run**
-
-### Prerequisites
-1. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-2. Setup .env file
-Copy .env.example to .env
-```bash
-cp .env.example .env
-```
-
-### Steps
-Execute the main script:
-
-```bash
-python main.py
-```
-
-Run individual tests (e.g., for fetcher.py):
-
-```bash
-python test/test_fetcher.py
-```
 
 ## **Future Enhancements**
 - Integration with trading APIs for automated orders.
