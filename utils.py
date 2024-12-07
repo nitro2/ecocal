@@ -68,8 +68,8 @@ def convert_time_to_timezone(time_str):
 
 def prettify_rows(rows, signals=None):
     """
-    Prettify and print rows with alignment for console output, including Positive/Negative (P/N) column and conditional coloring.
-    :param rows: List of dictionaries containing row data (including 'pn_indicator').
+    Prettify and print rows with alignment for console output, including color handling for Value objects.
+    :param rows: List of dictionaries containing row data.
     :param signals: Optional list of signals corresponding to each row.
     """
     # Apply currency filter if PRINT_CURRENCIES is not None
@@ -114,21 +114,21 @@ def prettify_rows(rows, signals=None):
         if Config.USE_COLORS:
             event = Fore.CYAN + event + Style.RESET_ALL
 
-        # Style Actual value based on P/N logic
-        actual = row.get("actual", "_")
-        forecast = row.get("forecast", None)
-        pn_indicator = row.get("pn_indicator", "_")
-        if Config.USE_COLORS and actual != "_" and forecast is not None:
-            if pn_indicator == "Positive":
-                if actual > forecast:
-                    actual = Fore.GREEN + str(actual) + Style.RESET_ALL
-                elif actual < forecast:
-                    actual = Fore.RED + str(actual) + Style.RESET_ALL
-            elif pn_indicator == "Negative":
-                if actual > forecast:
-                    actual = Fore.RED + str(actual) + Style.RESET_ALL
-                elif actual < forecast:
-                    actual = Fore.GREEN + str(actual) + Style.RESET_ALL
+        # Extract and style Actual, Forecast, and Previous values
+        def format_value(value_obj):
+            if not value_obj:
+                return "_"
+            value = str(value_obj.value) if value_obj.value is not None else "_"
+            if Config.USE_COLORS:
+                if value_obj.color == "positive":
+                    value = Fore.GREEN + value + Style.RESET_ALL
+                elif value_obj.color == "negative":
+                    value = Fore.RED + value + Style.RESET_ALL
+            return value
+
+        actual = format_value(row.get("actual"))
+        forecast = format_value(row.get("forecast"))
+        previous = format_value(row.get("previous"))
 
         # Add row to table
         table_data.append([
@@ -137,12 +137,13 @@ def prettify_rows(rows, signals=None):
             importance,
             event,
             actual,
-            row.get("forecast", "_") if row.get("forecast") is not None else "_",
-            row.get("previous", "_") if row.get("previous") is not None else "_",
+            forecast,
+            previous,
             signal,
-            pn_indicator[0] if pn_indicator != "_" else "_"  # Add "P" or "N" to the P/N column
+            row.get("pn_indicator", "_"),  # Add P/N directly from row data
         ])
 
     # Print the formatted table if PRINT_TABLE is True
     if Config.PRINT_TABLE:
         print(tabulate(table_data, headers=headers, tablefmt="grid"))
+

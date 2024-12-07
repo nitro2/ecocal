@@ -6,6 +6,20 @@ from utils import log_error
 from datetime import datetime
 from pytz import timezone
 
+class Value:
+    def __init__(self, value, color):
+        """
+        Represents a value with an associated color (e.g., redFont, greenFont).
+        :param value: The numerical or string value.
+        :param color: The associated color as a string (e.g., 'red', 'green').
+        """
+        self.value = value
+        self.color = color
+
+    def __repr__(self):
+        return f"Value(value={self.value}, color={self.color})"
+
+
 class Fetcher:
     def __init__(self, base_url, target_timezone="UTC"):
         """
@@ -21,7 +35,7 @@ class Fetcher:
 
     def extract_data(self, rows):
         """
-        Extract relevant information from the rows, including importance level.
+        Extract relevant information from the rows, including importance level and value colors.
         :param rows: List of HTML rows from the economic calendar table.
         :return: List of dictionaries containing extracted data.
         """
@@ -47,14 +61,26 @@ class Fetcher:
                 else:
                     importance = 0  # Default to 0 if importance level is missing
 
-                # Extract actual, forecast, and previous values
+                # Extract values with colors
+                def parse_value(cell):
+                    if not cell:
+                        return None
+                    value = self._parse_value(cell.text.strip())
+                    color_class = cell.get("class", [])
+                    color = "neutral"  # Default
+                    if "redFont" in color_class:
+                        color = "negative"
+                    elif "greenFont" in color_class:
+                        color = "positive"
+                    return Value(value, color)
+
                 actual_cell = row.find('td', {"class": "bold"})
                 forecast_cell = row.find('td', {"class": "fore"})
                 previous_cell = row.find('td', {"class": "prev"})
 
-                actual = self._parse_value(actual_cell.text.strip()) if actual_cell else None
-                forecast = self._parse_value(forecast_cell.text.strip()) if forecast_cell else None
-                previous = self._parse_value(previous_cell.text.strip()) if previous_cell else None
+                actual = parse_value(actual_cell)
+                forecast = parse_value(forecast_cell)
+                previous = parse_value(previous_cell)
 
                 # Append parsed data
                 extracted_data.append({

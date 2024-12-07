@@ -22,25 +22,32 @@ class SignalProcessor:
 
     def classify_signal(self, actual, forecast, previous):
         """
-        Classify signal based on Actual, Forecast, and Previous values.
-        :param actual: The actual value of the event.
-        :param forecast: The forecast value of the event.
-        :param previous: The previous value of the event.
-        :return: A SignalLevel representing the signal.
+        Classify the signal based on actual, forecast, and previous values.
+        :param actual: Value object or None
+        :param forecast: Value object or None
+        :param previous: Value object or None
+        :return: Signal classification
         """
-        if actual is None or forecast is None or previous is None:
-            return SignalLevel.NO_SIGNAL  # Handle missing values gracefully
+        # Extract numerical values from Value objects or default to None
+        actual_val = actual.value if actual else None
+        forecast_val = forecast.value if forecast else None
+        previous_val = previous.value if previous else None
 
-        if actual > forecast and actual > previous:
-            return SignalLevel.STRONG_BUY
-        elif actual > forecast:
-            return SignalLevel.BUY
-        elif actual < forecast and actual < previous:
-            return SignalLevel.STRONG_SELL
-        elif actual < forecast:
-            return SignalLevel.SELL
+        # Ensure numerical comparisons work
+        if actual_val is not None and forecast_val is not None and previous_val is not None:
+            if actual_val > forecast_val and actual_val > previous_val:
+                return SignalLevel.STRONG_BUY
+            elif actual_val < forecast_val and actual_val < previous_val:
+                return SignalLevel.STRONG_SELL
+            elif actual_val > forecast_val:
+                return SignalLevel.BUY
+            elif actual_val < forecast_val:
+                return SignalLevel.SELL
+            else:
+                return SignalLevel.NEUTRAL
         else:
             return SignalLevel.NEUTRAL
+
 
     def aggregate_signals(self, rows):
         """
