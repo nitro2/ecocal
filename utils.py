@@ -118,7 +118,7 @@ def prettify_rows(rows, signals=None):
         def format_value(value_obj):
             if not value_obj:
                 return "_"
-            value = str(value_obj.value) if value_obj.value is not None else "_"
+            value = str(value_obj.value) + value_obj.unit if value_obj.value is not None else ""
             if Config.USE_COLORS:
                 if value_obj.color == "positive":
                     value = Fore.GREEN + value + Style.RESET_ALL

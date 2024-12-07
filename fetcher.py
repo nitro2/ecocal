@@ -5,15 +5,18 @@ from bs4 import BeautifulSoup
 from utils import log_error
 from datetime import datetime
 from pytz import timezone
+import re
 
 class Value:
-    def __init__(self, value, color):
+    def __init__(self, value, unit, color):
         """
         Represents a value with an associated color (e.g., redFont, greenFont).
         :param value: The numerical or string value.
+        :param unit: The unit of the value (e.g., '%', 'k').
         :param color: The associated color as a string (e.g., 'red', 'green').
         """
         self.value = value
+        self.unit = unit
         self.color = color
 
     def __repr__(self):
@@ -65,7 +68,7 @@ class Fetcher:
                 def parse_value(cell):
                     if not cell:
                         return None
-                    value = self._parse_value(cell.text.strip())
+                    value, unit = self._parse_value(cell.text.strip())
                     color_class = cell.get("class", [])
                     color = "neutral"  # Default
                     if "redFont" in color_class:
@@ -74,7 +77,7 @@ class Fetcher:
                         color = "positive"
                     elif "bold" in color_class and "blackFont" in color_class:
                         color = "equal"
-                    return Value(value, color)
+                    return Value(value, unit, color)
 
                 actual_cell = row.find('td', {"class": "bold"})
                 forecast_cell = row.find('td', {"class": "fore"})
@@ -99,17 +102,28 @@ class Fetcher:
 
         return extracted_data
 
-    def _parse_value(self, value):
+    def _parse_value(self, value_str):
         """
-        Convert string values to appropriate numerical format.
-        :param value: Raw value string from the table (e.g., "6.3%", "1,000").
-        :return: Parsed float or None if parsing fails.
+        Parse a value string and extract the numeric value and unit (e.g., '%', 'K', 'B', etc.).
+        :param value_str: The value string to parse (e.g., '194K', '-2%', '1.5B').
+        :return: A tuple containing the numeric value (as float) and the unit (as str), or (None, None) if invalid.
         """
         try:
-            # Remove common formatting characters like commas and percentages
-            return float(value.replace(',', '').replace('%', ''))
-        except ValueError:
-            return None
+            if not value_str or value_str == "&nbsp;":
+                return None, None
+
+            # Match a number with an optional unit (any letter or '%')
+            import re
+            match = re.match(r"([-+]?\d*\.?\d+)([a-zA-Z%]*)", value_str.strip())
+            if match:
+                number = float(match.group(1))  # Numeric value
+                unit = match.group(2) or ""  # Unit (e.g., '%', 'K', 'B') or empty string
+                return number, unit
+            return None, None
+        except Exception as e:
+            print(f"Error parsing value: {e}")
+            return None, None
+
 
     def fetch_html(self, save_sample=False):
         """
