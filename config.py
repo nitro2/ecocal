@@ -14,32 +14,32 @@ class Config:
     # Read CRITICAL_TIMES from .env, and split the string into a list of dictionaries
     critical_times_str = os.getenv("CRITICAL_TIMES", "")
     CRITICAL_TIMES = [
-        {"day": time.split(",")[0], "time": time.split(",")[1]}
+        {"day": time.split(",")[0].lower(), "time": time.split(",")[1]}
         for time in critical_times_str.split(";") if time
     ]
 
     # Read BASE_URL from .env file
     BASE_URL = os.getenv("BASE_URL", "https://www.investing.com/economic-calendar/")
 
-    # Parse SCHEDULE_INTERVAL
-    raw_interval = os.getenv("SCHEDULE_INTERVAL", "1m").lower()
-    INTERVAL_VALUE = None
-    INTERVAL_UNIT = None
-    if raw_interval.endswith("s"):  # Seconds
-        INTERVAL_VALUE = int(raw_interval[:-1])
-        INTERVAL_UNIT = "seconds"
-    elif raw_interval.endswith("m"):  # Minutes
-        INTERVAL_VALUE = int(raw_interval[:-1])
-        INTERVAL_UNIT = "minutes"
-    elif raw_interval.endswith("h"):  # Hours
-        INTERVAL_VALUE = int(raw_interval[:-1])
-        INTERVAL_UNIT = "hours"
-    elif raw_interval.endswith("d"):  # Days
-        INTERVAL_VALUE = int(raw_interval[:-1])
-        INTERVAL_UNIT = "days"
-    else:
-        INTERVAL_VALUE = 1
-        INTERVAL_UNIT = "minutes"  # Default to 1 minute
+    # Parse default interval
+    default_interval_raw = os.getenv("SCHEDULE_INTERVAL_DEFAULT", "10s").lower()
+    DEFAULT_INTERVAL_VALUE, DEFAULT_INTERVAL_UNIT = None, None
+    if default_interval_raw.endswith("s"):  # Seconds
+        DEFAULT_INTERVAL_VALUE = int(default_interval_raw[:-1])
+        DEFAULT_INTERVAL_UNIT = "seconds"
+    elif default_interval_raw.endswith("m"):  # Minutes
+        DEFAULT_INTERVAL_VALUE = int(default_interval_raw[:-1])
+        DEFAULT_INTERVAL_UNIT = "minutes"
+
+    # Parse critical interval
+    critical_interval_raw = os.getenv("SCHEDULE_INTERVAL_CRITICAL", "3s").lower()
+    CRITICAL_INTERVAL_VALUE, CRITICAL_INTERVAL_UNIT = None, None
+    if critical_interval_raw.endswith("s"):  # Seconds
+        CRITICAL_INTERVAL_VALUE = int(critical_interval_raw[:-1])
+        CRITICAL_INTERVAL_UNIT = "seconds"
+    elif critical_interval_raw.endswith("m"):  # Minutes
+        CRITICAL_INTERVAL_VALUE = int(critical_interval_raw[:-1])
+        CRITICAL_INTERVAL_UNIT = "minutes"
 
     # Read PRINT_TABLE and convert to boolean
     PRINT_TABLE = os.getenv("PRINT_TABLE", "False").lower() == "true"

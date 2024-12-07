@@ -1,53 +1,72 @@
-import schedule
 import time
+from datetime import datetime, timedelta
+from threading import Thread
 from config import Config
 
+
 class Scheduler:
-    def __init__(self):
-        pass
-
-    def schedule_tasks(self, task_function):
+    def __init__(self, task_function):
         """
-        Schedule tasks for periodic execution based on SCHEDULE_INTERVAL and CRITICAL_TIMES in Config.
-        :param task_function: The function to execute for each scheduled task.
+        Initialize the Scheduler with a task function and interval configurations.
+        :param task_function: The function to execute at intervals.
         """
-        # Schedule based on SCHEDULE_INTERVAL
-        interval = Config.INTERVAL_VALUE
-        unit = Config.INTERVAL_UNIT
+        self.task_function = task_function
+        self.default_interval = Config.DEFAULT_INTERVAL_VALUE
+        self.default_unit = Config.DEFAULT_INTERVAL_UNIT
+        self.critical_interval = Config.CRITICAL_INTERVAL_VALUE
+        self.critical_unit = Config.CRITICAL_INTERVAL_UNIT
+        self.running = False
 
-        if unit == "seconds":
-            print(f"Task scheduled to run every {interval} seconds.")
-            schedule.every(interval).seconds.do(task_function)
-        elif unit == "minutes":
-            schedule.every(interval).minutes.do(task_function)
-            print(f"Task scheduled to run every {interval} minutes.")
-        elif unit == "hours":
-            schedule.every(interval).hours.do(task_function)
-            print(f"Task scheduled to run every {interval} hours.")
-        elif unit == "days":
-            schedule.every(interval).days.at("00:00").do(task_function)
-            print(f"Task scheduled to run every {interval} days.")
-        else:
-            print("Unknown schedule interval unit. Defaulting to every minute.")
-            schedule.every(1).minutes.do(task_function)
-
-        # Schedule tasks for the configured critical times
-        for critical_time in Config.CRITICAL_TIMES:
-            day = critical_time["day"]
-            time_str = critical_time["time"]
-            getattr(schedule.every(), day).at(time_str).do(task_function)
-            print(f"Task scheduled for {day} at {time_str}.")
-
-    def run_forever(self):
+    def get_interval_in_seconds(self, interval_value, interval_unit):
         """
-        Runs the scheduled tasks indefinitely.
+        Convert interval value and unit to seconds.
+        :param interval_value: The interval value (e.g., 10).
+        :param interval_unit: The interval unit (e.g., 'seconds').
+        :return: Interval in seconds.
         """
-        print("Running scheduled tasks...")
-        if Config.INTERVAL_UNIT == "seconds":
-            while True:
-                schedule.run_pending()
-                time.sleep(Config.INTERVAL_VALUE)
-        else:
-            while True:
-                schedule.run_pending()
-                time.sleep(1)
+        if interval_unit == "seconds":
+            return interval_value
+        elif interval_unit == "minutes":
+            return interval_value * 60
+        return 10  # Default fallback to 10 seconds if invalid
+
+    def is_critical_time(self):
+        """
+        Check if the current time is within 1 minute of any critical time.
+        :return: True if in critical time, False otherwise.
+        """
+        now = datetime.now()
+        for critical in Config.CRITICAL_TIMES:
+            critical_time = datetime.strptime(critical["time"], "%H:%M").replace(
+                year=now.year, month=now.month, day=now.day
+            )
+            # Allow a 1-minute window
+            if critical_time <= now < critical_time + timedelta(minutes=1):
+                return True
+        return False
+
+    def get_current_interval(self):
+        """
+        Get the current interval in seconds based on whether it's critical time.
+        :return: Interval in seconds.
+        """
+        if self.is_critical_time():
+            return self.get_interval_in_seconds(self.critical_interval, self.critical_unit)
+        return self.get_interval_in_seconds(self.default_interval, self.default_unit)
+
+    def start(self):
+        """
+        Start the scheduler.
+        """
+        self.running = True
+        while self.running:
+            current_interval = self.get_current_interval()
+            print(f"Running task... (Interval: {current_interval}s)")
+            self.task_function()
+            time.sleep(current_interval)
+
+    def stop(self):
+        """
+        Stop the scheduler.
+        """
+        self.running = False

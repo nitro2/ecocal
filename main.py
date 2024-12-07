@@ -12,7 +12,6 @@ def run_task():
     fetcher = Fetcher(Config.BASE_URL, target_timezone=Config.TARGET_TIMEZONE)
     processor = SignalProcessor()
 
-    print("Running task...")
     data = fetcher.fetch_data()
     if data:
         # Aggregate and classify signals for the data
@@ -21,10 +20,11 @@ def run_task():
     else:
         print("No data fetched.")
 
-    print("Task complete.")
+    print("Task complete.\n"+'-'*50)
 
 if __name__ == "__main__":
-    scheduler = Scheduler()
-    run_task()  # Run the task once before scheduling
-    scheduler.schedule_tasks(run_task)  # Pass the task function to the scheduler
-    scheduler.run_forever()
+    scheduler = Scheduler(run_task)
+    try:
+        scheduler.start()
+    except KeyboardInterrupt:
+        scheduler.stop()
