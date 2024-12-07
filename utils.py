@@ -124,6 +124,8 @@ def prettify_rows(rows, signals=None):
                     value = Fore.GREEN + value + Style.RESET_ALL
                 elif value_obj.color == "negative":
                     value = Fore.RED + value + Style.RESET_ALL
+                elif value_obj.color == "equal":
+                    value = Fore.YELLOW + value + Style.RESET_ALL
             return value
 
         actual = format_value(row.get("actual"))

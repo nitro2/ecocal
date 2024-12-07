@@ -72,6 +72,8 @@ class Fetcher:
                         color = "negative"
                     elif "greenFont" in color_class:
                         color = "positive"
+                    elif "bold" in color_class and "blackFont" in color_class:
+                        color = "equal"
                     return Value(value, color)
 
                 actual_cell = row.find('td', {"class": "bold"})
