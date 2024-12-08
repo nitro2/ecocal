@@ -387,7 +387,7 @@
     "initial-jobless-claims-294": {
         "event": "Initial Jobless Claims",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/initial-jobless-claims-294"
     },
@@ -618,14 +618,14 @@
     "u6-unemployment-rate-1670": {
         "event": "U6 Unemployment Rate",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/u6-unemployment-rate-1670"
     },
     "unemployment-rate-300": {
         "event": "Unemployment Rate",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/unemployment-rate-300"
     },

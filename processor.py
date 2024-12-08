@@ -3,8 +3,8 @@ from utils import prettify_rows
 from json import load
 
 # Load positivity mapping once at the top
-with open("positivity_mapping.json", "r") as f:
-    positivity_mapping = load(f)
+with open("event_data.json", "r") as f:
+    event_data_json = load(f)
 
 class SignalLevel(Enum):
     STRONG_BUY = "Strong Buy"
@@ -121,7 +121,7 @@ class SignalProcessor:
         """
         for row in rows:
             # Extract the base event name by removing parentheses and trimming whitespace
-            event_name = row.get("event", "_").split("(")[0].strip()
+            id = row.get("id", "")
             # Match the event name to the positivity mapping
-            row["pn_indicator"] = positivity_mapping.get(event_name, "_")  # Default to "_"
+            row["pn_indicator"] = event_data_json.get(id, "_").get("pn_indicator")  # Default to "_"
         return rows
