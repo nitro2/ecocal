@@ -2,22 +2,6 @@
 
 This project fetches economic calendar data from Investing.com and processes US index data to generate Buy/Sell signals based on `Actual`, `Forecast`, and `Previous` values. The tool helps investors make informed decisions by providing individual and aggregate signals.
 
-## **Project Structure**
-
-```plaintext
-project/
-│
-├── fetcher.py          # Fetches and filters economic calendar data for US indexes.
-├── processor.py        # Processes data to classify Buy/Sell signals.
-├── scheduler.py        # Manages periodic and critical-time execution of tasks.
-├── config.py           # Configuration settings, such as URLs and schedules.
-├── utils.py            # Shared utility functions, such as logging and parsing.
-├── main.py             # Entry point of the application.
-│
-└── test/               # Contains test scripts for individual modules.
-    └── test_fetcher.py # Tests data fetching and filtering functionality.
-```
-
 ## **How to Run**
 
 1. Install dependencies:
@@ -46,6 +30,21 @@ Run individual tests (e.g., for fetcher.py):
 
 ```bash
 python test/test_fetcher.py
+```
+## **Project Structure**
+
+```plaintext
+project/
+│
+├── fetcher.py          # Fetches and filters economic calendar data for US indexes.
+├── processor.py        # Processes data to classify Buy/Sell signals.
+├── scheduler.py        # Manages periodic and critical-time execution of tasks.
+├── config.py           # Configuration settings, such as URLs and schedules.
+├── utils.py            # Shared utility functions, such as logging and parsing.
+├── main.py             # Entry point of the application.
+│
+└── test/               # Contains test scripts for individual modules.
+    └── test_fetcher.py # Tests data fetching and filtering functionality.
 ```
 
 ## **Modules Overview**

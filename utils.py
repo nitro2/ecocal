@@ -66,11 +66,10 @@ def convert_time_to_timezone(time_str):
         print(f"Error in time conversion: {e}")
         return time_str  # Return original time if conversion fails
 
-def prettify_rows(rows, signals=None):
+def prettify_rows(rows):
     """
     Prettify and print rows with alignment for console output, including color handling for Value objects.
     :param rows: List of dictionaries containing row data.
-    :param signals: Optional list of signals corresponding to each row.
     """
     # Apply currency filter
     rows = [
@@ -102,7 +101,7 @@ def prettify_rows(rows, signals=None):
                 importance = Fore.GREEN + importance + Style.RESET_ALL
 
         # Style signal
-        signal = signals[idx] if signals else "_"
+        signal = row.get("signal", "")
         if Config.USE_COLORS:
             if signal == "Strong Buy":
                 signal = Fore.GREEN + signal + Style.RESET_ALL

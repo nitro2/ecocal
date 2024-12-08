@@ -6,22 +6,7 @@ from utils import log_error
 from datetime import datetime
 from pytz import timezone
 import re
-
-class Value:
-    def __init__(self, value, unit, color):
-        """
-        Represents a value with an associated color (e.g., redFont, greenFont).
-        :param value: The numerical or string value.
-        :param unit: The unit of the value (e.g., '%', 'k').
-        :param color: The associated color as a string (e.g., 'red', 'green').
-        """
-        self.value = value
-        self.unit = unit
-        self.color = color
-
-    def __repr__(self):
-        return f"Value(value={self.value}, color={self.color})"
-
+import data
 
 class Fetcher:
     def __init__(self, base_url, target_timezone="UTC"):
@@ -84,7 +69,7 @@ class Fetcher:
                         color = "positive"
                     elif "bold" in color_class and "blackFont" in color_class:
                         color = "equal"
-                    return Value(value, unit, color)
+                    return data.Value(value, unit, color)
 
                 actual_cell = row.find('td', {"class": "bold"})
                 forecast_cell = row.find('td', {"class": "fore"})
