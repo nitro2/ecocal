@@ -48,7 +48,7 @@ def convert_time_to_timezone(time_str):
     """
     try:
         base_tz = timezone(Config.BASE_TIMEZONE)  # Use BASE_TIMEZONE from .env
-        target_tz = timezone(Config.TARGET_TIMEZONE)
+        target_tz = timezone(Config.TARGET_TIMEZONE) # Use TARGET_TIMEZONE from .env
 
         # Add today's date to the time string to avoid year 1900 issues
         today = datetime.now().date()
@@ -72,13 +72,13 @@ def prettify_rows(rows, signals=None):
     :param rows: List of dictionaries containing row data.
     :param signals: Optional list of signals corresponding to each row.
     """
-    # Apply currency filter if PRINT_CURRENCIES is not None
-    if Config.PRINT_CURRENCIES:
-        rows = [
-            row
-            for row in rows
-            if row.get("currency") in Config.PRINT_CURRENCIES
-        ]
+    # Apply currency filter
+    rows = [
+        row
+        for row in rows
+        if (Config.PRINT_CURRENCIES and row.get("currency") in Config.PRINT_CURRENCIES)
+            and (Config.IMPORTANCE_FILTER and row.get("importance") >= Config.IMPORTANCE_FILTER)
+    ]
 
     # If no rows match the filter, exit early
     if not rows:

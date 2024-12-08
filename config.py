@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
-load_dotenv()
+load_dotenv(override=True)
 
 class Config:
     # Read TARGET_TIMEZONE from .env file, default to UTC if not found
@@ -14,7 +14,10 @@ class Config:
     # Read CRITICAL_TIMES from .env, and split the string into a list of dictionaries
     critical_times_str = os.getenv("CRITICAL_TIMES", "")
     CRITICAL_TIMES = [
-        {"day": time.split(",")[0].lower(), "time": time.split(",")[1]}
+        {
+            "day": time.split(",")[0].lower(),
+            "time": time.split(",")[1]  # Expecting H:M:S format
+        }
         for time in critical_times_str.split(";") if time
     ]
 
@@ -52,3 +55,5 @@ class Config:
 
     # Use colors in the output table
     USE_COLORS = os.getenv("USE_COLORS", "True").lower() == "true"
+
+    IMPORTANCE_FILTER = int(os.getenv('IMPORTANCE_FILTER', 1))
