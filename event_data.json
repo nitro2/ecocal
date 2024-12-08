@@ -1,0 +1,1527 @@
+{
+    "coincident-indicator-1441": {
+        "event": "Coincident Indicator",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "leading-index-191": {
+        "event": "Leading Index",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "leading-index-1582": {
+        "event": "Leading Index",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "core-cpi-2071": {
+        "event": "Core CPI",
+        "currency": "SGD",
+        "pn_indicator": ""
+    },
+    "cpi-nsa-2204": {
+        "event": "CPI",
+        "currency": "SGD",
+        "pn_indicator": ""
+    },
+    "singaporean-cpi-1112": {
+        "event": "CPI",
+        "currency": "SGD",
+        "pn_indicator": ""
+    },
+    "employment-level-98": {
+        "event": "Employment Level",
+        "currency": "CHF",
+        "pn_indicator": ""
+    },
+    "spanish-ppi-404": {
+        "event": "Spanish PPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "german-business-expectations-521": {
+        "event": "German Business Expectations",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "german-current-assessment-520": {
+        "event": "German Current Assessment",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "german-ifo-business-climate-index-132": {
+        "event": "German Ifo Business Climate Index",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "boe-mpc-member-dhingra-speaks-2140": {
+        "event": "BoE MPC Member Dhingra Speaks",
+        "currency": "GBP",
+        "pn_indicator": ""
+    },
+    "fgv-consumer-confidence-860": {
+        "event": "FGV Consumer confidence",
+        "currency": "BRL",
+        "pn_indicator": ""
+    },
+    "bcb-focus-market-readout-1784": {
+        "event": "BCB Focus Market Readout",
+        "currency": "BRL",
+        "pn_indicator": ""
+    },
+    "current-account-(usd)-859": {
+        "event": "Current Account",
+        "currency": "BRL",
+        "pn_indicator": ""
+    },
+    "foreign-direct-investment-(usd)-862": {
+        "event": "Foreign direct investment",
+        "currency": "BRL",
+        "pn_indicator": ""
+    },
+    "chicago-fed-national-activity-523": {
+        "event": "Chicago Fed National Activity",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "manufacturing-sales-207": {
+        "event": "Manufacturing Sales",
+        "currency": "CAD",
+        "pn_indicator": ""
+    },
+    "french-12-month-btf-auction-685": {
+        "event": "French 12-Month BTF Auction",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "french-3-month-btf-auction-683": {
+        "event": "French 3-Month BTF Auction",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "french-6-month-btf-auction-684": {
+        "event": "French 6-Month BTF Auction",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "dallas-fed-mfg-business-index-658": {
+        "event": "Dallas Fed Mfg Business Index",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "ecb's-lane-speaks-1971": {
+        "event": "ECB's Lane Speaks",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "3-month-bill-auction-568": {
+        "event": "3-Month Bill Auction",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "6-month-bill-auction-679": {
+        "event": "6-Month Bill Auction",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "german-buba-president-nagel-speech-2015": {
+        "event": "German Buba President Nagel Speaks",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "2-year-note-auction-569": {
+        "event": "2-Year Note Auction",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "south-korean-consumer-confidence-468": {
+        "event": "Consumer Confidence",
+        "currency": "KRW",
+        "pn_indicator": ""
+    },
+    "cspi-76": {
+        "event": "Corporate Services Price Index",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "brc-shop-price-index-19": {
+        "event": "BRC Shop Price Index",
+        "currency": "GBP",
+        "pn_indicator": ""
+    },
+    "boj-core-cpi-1667": {
+        "event": "BoJ Core CPI",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "singaporean-industrial-production-1078": {
+        "event": "Industrial Production",
+        "currency": "SGD",
+        "pn_indicator": ""
+    },
+    "singaporean-industrial-production-512": {
+        "event": "Industrial Production",
+        "currency": "SGD",
+        "pn_indicator": ""
+    },
+    "leading-indicator-2257": {
+        "event": "Leading Indicators",
+        "currency": "ZAR",
+        "pn_indicator": ""
+    },
+    "boe-mpc-member-pill-speech-2011": {
+        "event": "BoE MPC Member Pill Speaks",
+        "currency": "GBP",
+        "pn_indicator": ""
+    },
+    "hong-kong-exports-1086": {
+        "event": "Exports",
+        "currency": "HKD",
+        "pn_indicator": ""
+    },
+    "hong-kong-imports-1087": {
+        "event": "Imports",
+        "currency": "HKD",
+        "pn_indicator": ""
+    },
+    "hong-kong-trade-balance-502": {
+        "event": "Trade Balance",
+        "currency": "HKD",
+        "pn_indicator": ""
+    },
+    "ecb-mccaul-speaks-1994": {
+        "event": "ECB McCaul Speaks",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "german-5-year-bobl-auction-579": {
+        "event": "German 5-Year Bobl Auction",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "cbi-distributive-trades-realized-33": {
+        "event": "CBI Distributive Trades Survey",
+        "currency": "GBP",
+        "pn_indicator": ""
+    },
+    "brazilian-mid-month-cpi-1570": {
+        "event": "Mid-Month CPI",
+        "currency": "BRL",
+        "pn_indicator": ""
+    },
+    "brazilian-mid-month-cpi-1569": {
+        "event": "Mid-Month CPI",
+        "currency": "BRL",
+        "pn_indicator": ""
+    },
+    "building-permits-25": {
+        "event": "Building Permits",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "building-permits-885": {
+        "event": "Building Permits",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "wholesale-sales-306": {
+        "event": "Wholesale Sales",
+        "currency": "CAD",
+        "pn_indicator": ""
+    },
+    "redbook-911": {
+        "event": "Redbook",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "house-price-index-897": {
+        "event": "House Price Index",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "house-price-index-327": {
+        "event": "House Price Index",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "monthly-home-price-index-1287": {
+        "event": "House Price Index",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "s-p-cs-hpi-composite---20-s.a.-1334": {
+        "event": "S&P/CS HPI Composite - 20 s.a.",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "s-p-cs-hpi-composite-20-n.s.a.-913": {
+        "event": "S&P/CS HPI Composite - 20 n.s.a.",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "s-p-cs-hpi-composite-20-n.s.a.-329": {
+        "event": "S&P/CS HPI Composite - 20 n.s.a.",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "cb-consumer-confidence-48": {
+        "event": "CB Consumer Confidence",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "new-home-sales-896": {
+        "event": "New Home Sales",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "new-home-sales-222": {
+        "event": "New Home Sales",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "richmond-manufacturing-index-263": {
+        "event": "Richmond Manufacturing Index",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "richmond-manufacturing-shipments-1510": {
+        "event": "Richmond Manufacturing Shipments",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "richmond-services-index-1511": {
+        "event": "Richmond Services Index",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "dallas-fed-services-revenues-1444": {
+        "event": "Dallas Fed Services Revenues",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "texas-services-sector-outlook-1519": {
+        "event": "Texas Services Sector Outlook",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "us-m2-money-supply-1999": {
+        "event": "M2 Money Supply",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "52-week-bill-auction-680": {
+        "event": "52-Week Bill Auction",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "5-year-note-auction-570": {
+        "event": "5-Year Note Auction",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "fomc-meeting-minutes-108": {
+        "event": "FOMC Meeting Minutes",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "api-weekly-crude-stock-656": {
+        "event": "API Weekly Crude Oil Stock",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "construction-work-done-46": {
+        "event": "Construction Work Done",
+        "currency": "AUD",
+        "pn_indicator": ""
+    },
+    "weighted-cpi-2215": {
+        "event": "Monthly CPI Indicator",
+        "currency": "AUD",
+        "pn_indicator": ""
+    },
+    "interest-rate-decision-167": {
+        "event": "RBNZ Interest Rate Decision",
+        "currency": "NZD",
+        "pn_indicator": ""
+    },
+    "rbnz-monetary-policy-statement-400": {
+        "event": "RBNZ Monetary Policy Statement",
+        "currency": "NZD",
+        "pn_indicator": ""
+    },
+    "rbnz-rate-statement-399": {
+        "event": "RBNZ Rate Statement",
+        "currency": "NZD",
+        "pn_indicator": ""
+    },
+    "chinese-industrial-profit-ytd-1917": {
+        "event": "Chinese Industrial profit YTD",
+        "currency": "CNY",
+        "pn_indicator": ""
+    },
+    "rbnz-press-conference-1761": {
+        "event": "RBNZ Press Conference",
+        "currency": "NZD",
+        "pn_indicator": ""
+    },
+    "french-consumer-confidence-519": {
+        "event": "French Consumer Confidence",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "ecb-non-monetary-policy-meeting-2014": {
+        "event": "European Central Bank Non-monetary Policy Meeting",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "zew-expectations-311": {
+        "event": "ZEW Expectations",
+        "currency": "CHF",
+        "pn_indicator": ""
+    },
+    "gfk-german-consumer-climate-359": {
+        "event": "GfK German Consumer Climate",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "italian-6-month-bot-auction-696": {
+        "event": "Italian 6-Month BOT Auction",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "france-jobseekers-total-1623": {
+        "event": "France Jobseekers Total",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "indian-m3-money-supply-756": {
+        "event": "M3 Money Supply",
+        "currency": "INR",
+        "pn_indicator": ""
+    },
+    "mba-30-year-mortgage-rate-1042": {
+        "event": "MBA 30-Year Mortgage Rate",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "mba-mortgage-applications-380": {
+        "event": "MBA Mortgage Applications",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "mba-purchase-index-1494": {
+        "event": "MBA Purchase Index",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "mortgage-market-index-1427": {
+        "event": "Mortgage Market Index",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "mortgage-refinance-index-1428": {
+        "event": "Mortgage Refinance Index",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "continuing-jobless-claims-522": {
+        "event": "Continuing Jobless Claims",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "core-durable-goods-orders-59": {
+        "event": "Core Durable Goods Orders",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "core-pce-prices-1548": {
+        "event": "Core PCE Prices",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "corporate-profits-1315": {
+        "event": "Corporate Profits",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "durable-goods-orders-86": {
+        "event": "Durable Goods Orders",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "durables-excluding-defense-1446": {
+        "event": "Durables Excluding Defense",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "gdp-375": {
+        "event": "GDP",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "gdp-price-index-343": {
+        "event": "GDP Price Index",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "gdp-sales-1468": {
+        "event": "GDP Sales",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "goods-orders-non-defense-ex-air-1047": {
+        "event": "Goods Orders Non Defense Ex Air",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "goods-trade-balance-1650": {
+        "event": "Goods Trade Balance",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "initial-jobless-claims-294": {
+        "event": "Initial Jobless Claims",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "jobless-claims-4-week-avg.-1041": {
+        "event": "Jobless Claims 4-Week Avg.",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "pce-prices-1571": {
+        "event": "PCE Prices",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "real-consumer-spending-914": {
+        "event": "Real Consumer Spending",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "retail-inventories-ex-auto-1887": {
+        "event": "Retail Inventories Ex Auto",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "wholesale-inventories-305": {
+        "event": "Wholesale Inventories",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "4-week-bill-auction-567": {
+        "event": "4-Week Bill Auction",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "8-week-bill-auction-1801": {
+        "event": "8-Week Bill Auction",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "core-pce-price-index-905": {
+        "event": "Core PCE Price Index",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "core-pce-price-index-61": {
+        "event": "Core PCE Price Index",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "pce-price-index-906": {
+        "event": "PCE Price index",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "pce-price-index-904": {
+        "event": "PCE price index",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "pending-home-sales-232": {
+        "event": "Pending Home Sales",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "pending-home-sales-index-902": {
+        "event": "Pending Home Sales Index",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "personal-income-234": {
+        "event": "Personal Income",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "personal-spending-235": {
+        "event": "Personal Spending",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "real-personal-consumption-895": {
+        "event": "Real Personal Consumption",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "eia-crude-oil-inventories-75": {
+        "event": "Crude Oil Inventories",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "eia-refinery-crude-runs-1960": {
+        "event": "EIA Refinery Crude Runs",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "eia-weekly-crude-imports-1658": {
+        "event": "Crude Oil Imports",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "eia-weekly-cushing-oil-inventories-1657": {
+        "event": "Cushing Crude Oil Inventories",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "eia-weekly-distillate-fuel-production-1660": {
+        "event": "Distillate Fuel Production",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "eia-weekly-distillates-stocks-917": {
+        "event": "EIA Weekly Distillates Stocks",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "eia-weekly-gasoline-production-1661": {
+        "event": "Gasoline Production",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "eia-weekly-heatoil-stock-1659": {
+        "event": "Heating Oil Stockpiles",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "eia-weekly-refinery-utilization-rates-1961": {
+        "event": "EIA Weekly Refinery Utilization Rates",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "gasoline-inventories-485": {
+        "event": "Gasoline Inventories",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "russian-industrial-production-553": {
+        "event": "Industrial Production",
+        "currency": "RUB",
+        "pn_indicator": ""
+    },
+    "russian-monthly-gdp-407": {
+        "event": "GDP Monthly",
+        "currency": "RUB",
+        "pn_indicator": ""
+    },
+    "russian-real-wage-growth-1886": {
+        "event": "Russian Real Wage Growth",
+        "currency": "RUB",
+        "pn_indicator": ""
+    },
+    "russian-retail-sales-555": {
+        "event": "Retail Sales",
+        "currency": "RUB",
+        "pn_indicator": ""
+    },
+    "russian-unemployment-rate-556": {
+        "event": "Unemployment Rate",
+        "currency": "RUB",
+        "pn_indicator": ""
+    },
+    "7-year-note-auction-682": {
+        "event": "7-Year Note Auction",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "natural-gas-storage-386": {
+        "event": "Natural Gas Storage",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "brazilian-caged-net-payroll-jobs-1523": {
+        "event": "CAGED Net Payroll Jobs",
+        "currency": "BRL",
+        "pn_indicator": ""
+    },
+    "brazilian-foreign-exchange-flows-764": {
+        "event": "Foreign Exchange Flows",
+        "currency": "BRL",
+        "pn_indicator": ""
+    },
+    "atlanta-fed-gdpnow-2260": {
+        "event": "Atlanta Fed GDPNow",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "baker-hughes-u.s.-rig-count-1652": {
+        "event": "U.S. Baker Hughes Oil Rig Count",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "u.s.-baker-hughes-total-rig-count-1810": {
+        "event": "U.S. Baker Hughes Total Rig Count",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "foreign-bonds-buying-987": {
+        "event": "Foreign Bonds Buying",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "foreign-investments-in-japanese-stocks-1451": {
+        "event": "Foreign Investments in Japanese Stocks",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "anz-business-confidence-27": {
+        "event": "ANZ Business Confidence",
+        "currency": "NZD",
+        "pn_indicator": ""
+    },
+    "nbnz-own-activity-1497": {
+        "event": "NBNZ Own Activity",
+        "currency": "NZD",
+        "pn_indicator": ""
+    },
+    "building-capital-expenditure-1008": {
+        "event": "Building Capital Expenditure",
+        "currency": "AUD",
+        "pn_indicator": ""
+    },
+    "plant-machinery-capital-expenditure-1015": {
+        "event": "Plant/Machinery Capital Expenditure",
+        "currency": "AUD",
+        "pn_indicator": ""
+    },
+    "private-new-capital-expenditure-252": {
+        "event": "Private New Capital Expenditure",
+        "currency": "AUD",
+        "pn_indicator": ""
+    },
+    "bank-of-korea-monetary-policy-board\u2019s-policy-setting-meeting-dates-2133": {
+        "event": "Bank of Korea Monetary Policy Board\u2019s Policy Setting Meeting Dates",
+        "currency": "KRW",
+        "pn_indicator": ""
+    },
+    "south-korean-interest-rate-decision-473": {
+        "event": "Interest Rate Decision",
+        "currency": "KRW",
+        "pn_indicator": ""
+    },
+    "spain-core-cpi-2189": {
+        "event": "Core CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "spanish-cpi-961": {
+        "event": "Spanish CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "spanish-cpi-401": {
+        "event": "Spanish CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "spanish-hicp-968": {
+        "event": "Spanish HICP",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "spanish-hicp-967": {
+        "event": "Spanish HICP",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "rba-gov-bullock-speaks-2258": {
+        "event": "RBA Gov Bullock Speaks",
+        "currency": "AUD",
+        "pn_indicator": ""
+    },
+    "italian-business-confidence-532": {
+        "event": "Italian Business Confidence",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "italian-consumer-confidence-525": {
+        "event": "Italian Consumer Confidence",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "baden-wuerttemberg-cpi-2131": {
+        "event": "Baden Wuerttemberg CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "baden-wuerttemberg-cpi-2130": {
+        "event": "Baden Wuerttemberg CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "bavaria-cpi-2125": {
+        "event": "Bavaria CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "bavaria-cpi-2126": {
+        "event": "Bavaria CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "brandenburg-cpi-2129": {
+        "event": "Brandenburg CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "brandenburg-cpi-2128": {
+        "event": "Brandenburg CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "hesse-cpi-2124": {
+        "event": "Hesse CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "hesse-cpi-2123": {
+        "event": "Hesse CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "north-rhine-westphalia-cpi-2122": {
+        "event": "North Rhine Westphalia CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "north-rhine-westphalia-cpi-2121": {
+        "event": "North Rhine Westphalia CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "saxony-cpi-2127": {
+        "event": "Saxony CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "saxony-cpi-2132": {
+        "event": "Saxony CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "m3-money-supply-2234": {
+        "event": "M3 Money Supply",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "m3-money-supply-198": {
+        "event": "M3 Money Supply",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "non-financial-corporations-loans-1901": {
+        "event": "Loans to Non Financial Corporations",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "private-loans-382": {
+        "event": "Private Sector Loans",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "south-african-ppi-601": {
+        "event": "PPI",
+        "currency": "ZAR",
+        "pn_indicator": ""
+    },
+    "south-african-ppi-1184": {
+        "event": "PPI",
+        "currency": "ZAR",
+        "pn_indicator": ""
+    },
+    "italian-ppi-750": {
+        "event": "Italian PPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "italian-ppi-531": {
+        "event": "Italian PPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "business-and-consumer-survey-534": {
+        "event": "Business and Consumer Survey",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "business-climate-918": {
+        "event": "Business Climate",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "consumer-confidence-49": {
+        "event": "Consumer Confidence",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "consumer-inflation-expectation-920": {
+        "event": "Consumer Inflation Expectation",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "european-selling-price-expectations-1572": {
+        "event": "Selling Price Expectations",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "european-services-sentiment-1418": {
+        "event": "Services Sentiment",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "industrial-sentiment-919": {
+        "event": "Industrial Sentiment",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "brazilian-igp-m-inflation-index-1561": {
+        "event": "IGP-M Inflation Index",
+        "currency": "BRL",
+        "pn_indicator": ""
+    },
+    "brazilian-bank-lending-761": {
+        "event": "Bank lending",
+        "currency": "BRL",
+        "pn_indicator": ""
+    },
+    "spanish-business-confidence-557": {
+        "event": "Spanish Business Confidence",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "brazilian-ppi-1877": {
+        "event": "Brazilian PPI",
+        "currency": "BRL",
+        "pn_indicator": ""
+    },
+    "german-cpi-128": {
+        "event": "German CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "german-cpi-737": {
+        "event": "German CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "german-hicp-1555": {
+        "event": "German HICP",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "german-hicp-1556": {
+        "event": "German HICP",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "russian-central-bank-reserves-(usd)-969": {
+        "event": "Central Bank reserves",
+        "currency": "RUB",
+        "pn_indicator": ""
+    },
+    "ecb's-elderson-speaks-1998": {
+        "event": "ECB's Elderson Speaks",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "average-weekly-earnings-2219": {
+        "event": "Average Weekly Earnings",
+        "currency": "CAD",
+        "pn_indicator": ""
+    },
+    "current-account-79": {
+        "event": "Current Account",
+        "currency": "CAD",
+        "pn_indicator": ""
+    },
+    "south-korean-industrial-production-746": {
+        "event": "Industrial Production",
+        "currency": "KRW",
+        "pn_indicator": ""
+    },
+    "south-korean-industrial-production-472": {
+        "event": "Industrial Production",
+        "currency": "KRW",
+        "pn_indicator": ""
+    },
+    "south-korean-retail-sales-474": {
+        "event": "Retail Sales",
+        "currency": "KRW",
+        "pn_indicator": ""
+    },
+    "south-korean-service-sector-output-649": {
+        "event": "Service Sector Output",
+        "currency": "KRW",
+        "pn_indicator": ""
+    },
+    "cpi-less-food-and-energy-2198": {
+        "event": "CPI Tokyo Ex Food & Energy",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "jobs-applications-ratio-1001": {
+        "event": "Jobs/applications ratio",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "tokyo-core-cpi-328": {
+        "event": "Tokyo Core CPI",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "tokyo-cpi-993": {
+        "event": "Tokyo CPI",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "tokyo-cpi-ex-food-and-energy-1908": {
+        "event": "CPI Tokyo Ex Food and Energy",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "unemployment-rate-298": {
+        "event": "Unemployment Rate",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "industrial-production-159": {
+        "event": "Industrial Production",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "industrial-production-forecast-1-999": {
+        "event": "Industrial Production forecast 1m ahead",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "industrial-production-forecast-2-1000": {
+        "event": "Industrial Production forecast 2m ahead",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "large-scale-retail-sales-yoy-2239": {
+        "event": "Large Scale Retail Sales YoY",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "retail-sales-261": {
+        "event": "Retail Sales",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "housing-credit-1423": {
+        "event": "Housing Credit",
+        "currency": "AUD",
+        "pn_indicator": ""
+    },
+    "private-sector-credit-321": {
+        "event": "Private Sector Credit",
+        "currency": "AUD",
+        "pn_indicator": ""
+    },
+    "german-buba-mauderer-speaks-1977": {
+        "event": "German Buba Mauderer Speaks",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "singaporean-bank-landing-790": {
+        "event": "Bank Lending",
+        "currency": "SGD",
+        "pn_indicator": ""
+    },
+    "m3-money-supply-2243": {
+        "event": "M3 Money Supply",
+        "currency": "NZD",
+        "pn_indicator": ""
+    },
+    "construction-orders-991": {
+        "event": "Construction Orders",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "household-confidence-148": {
+        "event": "Household Confidence",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "housing-starts-152": {
+        "event": "Housing Starts",
+        "currency": "JPY",
+        "pn_indicator": ""
+    },
+    "south-african-m3-money-supply-1301": {
+        "event": "M3 Money Supply",
+        "currency": "ZAR",
+        "pn_indicator": ""
+    },
+    "south-african-private-sector-credit-extension-1430": {
+        "event": "Private Sector Credit",
+        "currency": "ZAR",
+        "pn_indicator": ""
+    },
+    "french-consumer-spending-111": {
+        "event": "French Consumer Spending",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "boe-financial-stability-report-1672": {
+        "event": "BoE Financial Stability Report",
+        "currency": "GBP",
+        "pn_indicator": ""
+    },
+    "german-import-price-index-134": {
+        "event": "German Import Price Index",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "german-import-prices-1557": {
+        "event": "German Import Price Index",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "german-retail-sales-138": {
+        "event": "German Retail Sales",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "german-retail-sales-740": {
+        "event": "German Retail Sales",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "french-cpi-112": {
+        "event": "French CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "french-cpi-1759": {
+        "event": "French CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "french-gdp-113": {
+        "event": "French GDP",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "french-gdp-1750": {
+        "event": "French GDP",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "french-hicp-940": {
+        "event": "French HICP",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "french-hicp-941": {
+        "event": "French HICP",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "french-non-farm-payrolls-339": {
+        "event": "French Non-Farm Payrolls",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "french-ppi-527": {
+        "event": "French PPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "french-ppi-2235": {
+        "event": "PPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "kof-leading-indicators-360": {
+        "event": "KOF Leading Indicators",
+        "currency": "CHF",
+        "pn_indicator": ""
+    },
+    "official-reserves-assets-2224": {
+        "event": "Official Reserves Assets",
+        "currency": "CHF",
+        "pn_indicator": ""
+    },
+    "swiss-gdp-122": {
+        "event": "GDP",
+        "currency": "CHF",
+        "pn_indicator": ""
+    },
+    "swiss-gdp-957": {
+        "event": "GDP",
+        "currency": "CHF",
+        "pn_indicator": ""
+    },
+    "spanish-retail-sales-405": {
+        "event": "Spanish Retail Sales",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "hong-kong-money-supply-m3-1300": {
+        "event": "M3 Money Supply",
+        "currency": "HKD",
+        "pn_indicator": ""
+    },
+    "hong-kong-retail-sales-775": {
+        "event": "Retail Sales",
+        "currency": "HKD",
+        "pn_indicator": ""
+    },
+    "budget-balance-2176": {
+        "event": "Budget Balance",
+        "currency": "ZAR",
+        "pn_indicator": ""
+    },
+    "german-unemployment-change-332": {
+        "event": "German Unemployment Change",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "german-unemployment-rate-142": {
+        "event": "German Unemployment Rate",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "german-unemployment-total-1527": {
+        "event": "German Unemployment",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "german-unemployment-total-n.s.a.-1528": {
+        "event": "German Unemployment n.s.a.",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "italian-industrial-sales-1174": {
+        "event": "Italian Industrial Sales",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "italian-industrial-sales-783": {
+        "event": "Italian Industrial Sales",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "spanish-current-account-962": {
+        "event": "Spanish Current account",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "boe-consumer-credit-666": {
+        "event": "BoE Consumer Credit",
+        "currency": "GBP",
+        "pn_indicator": ""
+    },
+    "m3-money-supply-2236": {
+        "event": "M3 Money Supply",
+        "currency": "GBP",
+        "pn_indicator": ""
+    },
+    "m4-money-supply-199": {
+        "event": "M4 Money Supply",
+        "currency": "GBP",
+        "pn_indicator": ""
+    },
+    "mortgage-approvals-211": {
+        "event": "Mortgage Approvals",
+        "currency": "GBP",
+        "pn_indicator": ""
+    },
+    "mortgage-lending-664": {
+        "event": "Mortgage Lending",
+        "currency": "GBP",
+        "pn_indicator": ""
+    },
+    "net-lending-to-individuals-221": {
+        "event": "Net Lending to Individuals",
+        "currency": "GBP",
+        "pn_indicator": ""
+    },
+    "italian-cpi-748": {
+        "event": "Italian CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "italian-cpi-178": {
+        "event": "Italian CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "italian-hicp-946": {
+        "event": "Italian HICP",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "italian-hicp-947": {
+        "event": "Italian HICP",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "indian-federal-fiscal-deficit-1359": {
+        "event": "Federal Fiscal Deficit",
+        "currency": "INR",
+        "pn_indicator": ""
+    },
+    "core-cpi-922": {
+        "event": "Core CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "core-cpi-317": {
+        "event": "Core CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "cpi-68": {
+        "event": "CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "cpi-928": {
+        "event": "CPI",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "cpi,-n.s.a-1897": {
+        "event": "CPI, n.s.a",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "hicp-ex-energy---food-1900": {
+        "event": "HICP ex Energy & Food",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "hicp-ex-energy-and-food-1899": {
+        "event": "HICP ex Energy and Food",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "boe-fpc-meeting-minutes-1675": {
+        "event": "BoE FPC Meeting Minutes",
+        "currency": "GBP",
+        "pn_indicator": ""
+    },
+    "indian-gdp-quarterly-434": {
+        "event": "GDP Quarterly",
+        "currency": "INR",
+        "pn_indicator": ""
+    },
+    "boe-gov-bailey-speaks-1975": {
+        "event": "BoE Gov Bailey Speaks",
+        "currency": "GBP",
+        "pn_indicator": ""
+    },
+    "italian-trade-balance-non-eu-953": {
+        "event": "Italian Trade Balance Non-EU",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "indian-bank-loan-growth-758": {
+        "event": "Bank Loan Growth",
+        "currency": "INR",
+        "pn_indicator": ""
+    },
+    "indian-deposit-growth-1421": {
+        "event": "Deposit Growth",
+        "currency": "INR",
+        "pn_indicator": ""
+    },
+    "indian-fx-reserves,-usd-757": {
+        "event": "FX Reserves, USD",
+        "currency": "INR",
+        "pn_indicator": ""
+    },
+    "indian-infrastructure-output-759": {
+        "event": "Infrastructure Output",
+        "currency": "INR",
+        "pn_indicator": ""
+    },
+    "rbi-monetary-and-credit-information-review-1829": {
+        "event": "RBI Monetary and Credit Information Review",
+        "currency": "INR",
+        "pn_indicator": ""
+    },
+    "brazil-debt-to-gdp-ratio-763": {
+        "event": "Net Debt-to-GDP ratio",
+        "currency": "BRL",
+        "pn_indicator": ""
+    },
+    "brazilian-nominal-budget-balance-1228": {
+        "event": "Budget Balance",
+        "currency": "BRL",
+        "pn_indicator": ""
+    },
+    "brazilian-primary-budget-surplus-1342": {
+        "event": "Budget Surplus",
+        "currency": "BRL",
+        "pn_indicator": ""
+    },
+    "gross-debt-to-gdp-ratio-2008": {
+        "event": "Gross Debt-to-GDP ratio",
+        "currency": "BRL",
+        "pn_indicator": ""
+    },
+    "ecb's-de-guindos-speaks-1790": {
+        "event": "ECB's De Guindos Speaks",
+        "currency": "EUR",
+        "pn_indicator": ""
+    },
+    "brazilian-unemployment-rate-411": {
+        "event": "Unemployment Rate",
+        "currency": "BRL",
+        "pn_indicator": ""
+    },
+    "south-african-trade-balance-606": {
+        "event": "Trade Balance",
+        "currency": "ZAR",
+        "pn_indicator": ""
+    },
+    "canadian-gdp-implicit-price-1465": {
+        "event": "GDP Implicit Price",
+        "currency": "CAD",
+        "pn_indicator": ""
+    },
+    "gdp-1758": {
+        "event": "GDP",
+        "currency": "CAD",
+        "pn_indicator": ""
+    },
+    "gdp-123": {
+        "event": "GDP",
+        "currency": "CAD",
+        "pn_indicator": ""
+    },
+    "gdp-1024": {
+        "event": "GDP",
+        "currency": "CAD",
+        "pn_indicator": ""
+    },
+    "gdp-annualized-1025": {
+        "event": "GDP Annualized",
+        "currency": "CAD",
+        "pn_indicator": ""
+    },
+    "chicago-pmi-38": {
+        "event": "Chicago PMI",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "opec-crude-oil-production-algeria-(barrel)-1951": {
+        "event": "OPEC Crude Oil Production Algeria",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "opec-crude-oil-production-congo-(barrel)-1954": {
+        "event": "OPEC Crude Oil Production Congo",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "opec-crude-oil-production-gabon-(barrel)-1952": {
+        "event": "OPEC Crude Oil Production Gabon",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "opec-crude-oil-production-guinea-(barrel)-1956": {
+        "event": "OPEC Crude Oil Production Guinea",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "opec-crude-oil-production-iran-(barrel)-1944": {
+        "event": "OPEC Crude oil Production Iran",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "opec-crude-oil-production-iraq-(barrel)-1860": {
+        "event": "OPEC Crude oil Production Iraq",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "opec-crude-oil-production-kuwait-(barrel)-1948": {
+        "event": "OPEC Crude Oil Production Kuwait",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "opec-crude-oil-production-libya-(barrel)-1949": {
+        "event": "OPEC Crude Oil Production Libya",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "opec-crude-oil-production-nigeria-(barrel)-1950": {
+        "event": "OPEC Crude Oil Production Nigeria",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "opec-crude-oil-production-saudi-arabia-(barrel)-1945": {
+        "event": "OPEC Crude oil Production Saudi Arabia",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "opec-crude-oil-production-uae-(barrel)-1947": {
+        "event": "OPEC Crude oil Production UAE",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "opec-crude-oil-production-venezuela-(barrel)-1946": {
+        "event": "OPEC Crude oil Production Venezuela",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "budget-balance-1073": {
+        "event": "Budget Balance",
+        "currency": "CAD",
+        "pn_indicator": ""
+    },
+    "budget-balance-669": {
+        "event": "Budget Balance",
+        "currency": "CAD",
+        "pn_indicator": ""
+    },
+    "fed's-balance-sheet-2145": {
+        "event": "Fed's Balance Sheet",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "reserve-balances-with-federal-reserve-banks-2120": {
+        "event": "Reserve Balances with Federal Reserve Banks",
+        "currency": "USD",
+        "pn_indicator": ""
+    },
+    "chinese-composite-pmi-1913": {
+        "event": "Chinese Composite PMI",
+        "currency": "CNY",
+        "pn_indicator": ""
+    },
+    "chinese-manufacturing-pmi-594": {
+        "event": "Manufacturing PMI",
+        "currency": "CNY",
+        "pn_indicator": ""
+    },
+    "chinese-non-manufacturing-pmi-831": {
+        "event": "Non-Manufacturing PMI",
+        "currency": "CNY",
+        "pn_indicator": ""
+    }
+}

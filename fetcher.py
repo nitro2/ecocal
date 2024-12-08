@@ -56,6 +56,13 @@ class Fetcher:
                 # Extract event
                 event_cell = row.find('td', {"class": "event"})
                 event = event_cell.text.strip() if event_cell else "Unknown Event"
+                event_link = event_cell.find('a') if event_cell else None
+
+                # Extract event ID from the link
+                id = None
+                if event_link:
+                    href = event_link.get("href", "")
+                    id = href.split("/")[-1]  # Extract the last part of the URL (e.g., 'unemployment-rate-300')
 
                 # Extract importance level
                 importance_cell = row.find('td', {"class": "sentiment"})
@@ -92,6 +99,7 @@ class Fetcher:
                     "time": time,
                     "currency": currency,
                     "event": event,
+                    "id": id,
                     "importance": importance,
                     "actual": actual,
                     "forecast": forecast,
