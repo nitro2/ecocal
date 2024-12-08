@@ -132,6 +132,13 @@ def prettify_rows(rows, signals=None):
         forecast = format_value(row.get("forecast"))
         previous = format_value(row.get("previous"))
 
+        pn_indicator = row.get("pn_indicator", "")
+        if Config.USE_COLORS:
+            # if pn_indicator == "Positive":
+                # pn_indicator = Fore.GREEN + pn_indicator + Style.RESET_ALL
+            if pn_indicator == "Negative":
+                pn_indicator = Fore.RED + pn_indicator + Style.RESET_ALL
+
         # Add row to table
         table_data.append([
             row.get("time", "_"),
@@ -142,7 +149,8 @@ def prettify_rows(rows, signals=None):
             forecast,
             previous,
             signal,
-            row.get("pn_indicator", "_"),  # Add P/N directly from row data
+            pn_indicator
+
         ])
 
     # Print the formatted table if PRINT_TABLE is True
