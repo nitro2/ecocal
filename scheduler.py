@@ -32,12 +32,12 @@ class Scheduler:
 
     def is_critical_time(self):
         """
-        Check if the current time is within 1 minute of any critical time.
+        Check if the current time is within 1 minute of any critical time (H:M:S format).
         :return: True if in critical time, False otherwise.
         """
         now = datetime.now()
         for critical in Config.CRITICAL_TIMES:
-            critical_time = datetime.strptime(critical["time"], "%H:%M").replace(
+            critical_time = datetime.strptime(critical["time"], "%H:%M:%S").replace(
                 year=now.year, month=now.month, day=now.day
             )
             # Allow a 1-minute window
