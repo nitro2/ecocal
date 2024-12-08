@@ -23,6 +23,7 @@ def export_event_ids(input_html, output_json):
             event_id = row.get('id', None)
             event_name = row.get('event', 'Unknown Event')
             currency = row.get('currency', 'USD')  # Default to 'USD' if not found
+            importance = row.get('importance', 1)  # Default to 1 if not found
 
             # Remove the specific month and year from the event name
             event_name = event_name.split("(")[0].strip()
@@ -31,8 +32,10 @@ def export_event_ids(input_html, output_json):
                 # Add to the dictionary with the desired structure, including currency
                 events[event_id] = {
                     "event": event_name,
-                    "currency": currency,  # Extracted from the fetcher
-                    "pn_indicator": ""  # Placeholder for manual editing
+                    "currency": currency,
+                    "pn_indicator": "",
+                    "importance": importance,
+                    "link": f"https://www.investing.com/economic-calendar/{event_id}",
                 }
         except Exception as e:
             print(f"Error extracting event data: {e}")
