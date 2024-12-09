@@ -2,385 +2,385 @@
     "dallas-fed-mfg-business-index-658": {
         "event": "Dallas Fed Mfg Business Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/dallas-fed-mfg-business-index-658"
     },
     "2-year-note-auction-569": {
         "event": "2-Year Note Auction",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/2-year-note-auction-569"
     },
     "3-month-bill-auction-568": {
         "event": "3-Month Bill Auction",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/3-month-bill-auction-568"
     },
     "6-month-bill-auction-679": {
         "event": "6-Month Bill Auction",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/6-month-bill-auction-679"
     },
     "5-year-note-auction-570": {
         "event": "5-Year Note Auction",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/5-year-note-auction-570"
     },
     "goods-trade-balance-1650": {
         "event": "Goods Trade Balance",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/goods-trade-balance-1650"
     },
     "retail-inventories-ex-auto-1887": {
         "event": "Retail Inventories Ex Auto",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/retail-inventories-ex-auto-1887"
     },
     "wholesale-inventories-305": {
         "event": "Wholesale Inventories",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/wholesale-inventories-305"
     },
     "redbook-911": {
         "event": "Redbook",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/redbook-911"
     },
     "house-price-index-897": {
         "event": "House Price Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/house-price-index-897"
     },
     "house-price-index-327": {
         "event": "House Price Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/house-price-index-327"
     },
     "monthly-home-price-index-1287": {
         "event": "House Price Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/monthly-home-price-index-1287"
     },
     "s-p-cs-hpi-composite---20-s.a.-1334": {
         "event": "S&P/CS HPI Composite - 20 s.a.",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/s-p-cs-hpi-composite---20-s.a.-1334"
     },
     "s-p-cs-hpi-composite-20-n.s.a.-913": {
         "event": "S&P/CS HPI Composite - 20 n.s.a.",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/s-p-cs-hpi-composite-20-n.s.a.-913"
     },
     "s-p-cs-hpi-composite-20-n.s.a.-329": {
         "event": "S&P/CS HPI Composite - 20 n.s.a.",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/s-p-cs-hpi-composite-20-n.s.a.-329"
     },
     "cb-consumer-confidence-48": {
         "event": "CB Consumer Confidence",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/cb-consumer-confidence-48"
     },
     "jolts-job-openings-1057": {
         "event": "JOLTS Job Openings",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/jolts-job-openings-1057"
     },
     "atlanta-fed-gdpnow-2260": {
         "event": "Atlanta Fed GDPNow",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/atlanta-fed-gdpnow-2260"
     },
     "dallas-fed-services-revenues-1444": {
         "event": "Dallas Fed Services Revenues",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/dallas-fed-services-revenues-1444"
     },
     "texas-services-sector-outlook-1519": {
         "event": "Texas Services Sector Outlook",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/texas-services-sector-outlook-1519"
     },
     "52-week-bill-auction-680": {
         "event": "52-Week Bill Auction",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/52-week-bill-auction-680"
     },
     "7-year-note-auction-682": {
         "event": "7-Year Note Auction",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/7-year-note-auction-682"
     },
     "api-weekly-crude-stock-656": {
         "event": "API Weekly Crude Oil Stock",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/api-weekly-crude-stock-656"
     },
     "mba-30-year-mortgage-rate-1042": {
         "event": "MBA 30-Year Mortgage Rate",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/mba-30-year-mortgage-rate-1042"
     },
     "mba-mortgage-applications-380": {
         "event": "MBA Mortgage Applications",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/mba-mortgage-applications-380"
     },
     "mba-purchase-index-1494": {
         "event": "MBA Purchase Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/mba-purchase-index-1494"
     },
     "mortgage-market-index-1427": {
         "event": "Mortgage Market Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/mortgage-market-index-1427"
     },
     "mortgage-refinance-index-1428": {
         "event": "Mortgage Refinance Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/mortgage-refinance-index-1428"
     },
     "adp-nonfarm-employment-change-1": {
         "event": "ADP Nonfarm Employment Change",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/adp-nonfarm-employment-change-1"
     },
     "core-pce-prices-1548": {
         "event": "Core PCE Prices",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/core-pce-prices-1548"
     },
     "gdp-375": {
         "event": "GDP",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/gdp-375"
     },
     "gdp-price-index-343": {
         "event": "GDP Price Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/gdp-price-index-343"
     },
     "gdp-sales-1468": {
         "event": "GDP Sales",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/gdp-sales-1468"
     },
     "pce-prices-1571": {
         "event": "PCE Prices",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/pce-prices-1571"
     },
     "real-consumer-spending-914": {
         "event": "Real Consumer Spending",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/real-consumer-spending-914"
     },
     "pending-home-sales-232": {
         "event": "Pending Home Sales",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/pending-home-sales-232"
     },
     "pending-home-sales-index-902": {
         "event": "Pending Home Sales Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/pending-home-sales-index-902"
     },
     "eia-crude-oil-inventories-75": {
         "event": "Crude Oil Inventories",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/eia-crude-oil-inventories-75"
     },
     "eia-refinery-crude-runs-1960": {
         "event": "EIA Refinery Crude Runs",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/eia-refinery-crude-runs-1960"
     },
     "eia-weekly-crude-imports-1658": {
         "event": "Crude Oil Imports",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/eia-weekly-crude-imports-1658"
     },
     "eia-weekly-cushing-oil-inventories-1657": {
         "event": "Cushing Crude Oil Inventories",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/eia-weekly-cushing-oil-inventories-1657"
     },
     "eia-weekly-distillate-fuel-production-1660": {
         "event": "Distillate Fuel Production",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/eia-weekly-distillate-fuel-production-1660"
     },
     "eia-weekly-distillates-stocks-917": {
         "event": "EIA Weekly Distillates Stocks",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/eia-weekly-distillates-stocks-917"
     },
     "eia-weekly-gasoline-production-1661": {
         "event": "Gasoline Production",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/eia-weekly-gasoline-production-1661"
     },
     "eia-weekly-heatoil-stock-1659": {
         "event": "Heating Oil Stockpiles",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/eia-weekly-heatoil-stock-1659"
     },
     "eia-weekly-refinery-utilization-rates-1961": {
         "event": "EIA Weekly Refinery Utilization Rates",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/eia-weekly-refinery-utilization-rates-1961"
     },
     "gasoline-inventories-485": {
         "event": "Gasoline Inventories",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/gasoline-inventories-485"
     },
     "challenger-job-cuts-333": {
         "event": "Challenger Job Cuts",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/challenger-job-cuts-333"
     },
     "challenger-job-cuts-888": {
         "event": "Challenger Job Cuts",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/challenger-job-cuts-888"
     },
     "continuing-jobless-claims-522": {
         "event": "Continuing Jobless Claims",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/continuing-jobless-claims-522"
     },
     "core-pce-price-index-61": {
         "event": "Core PCE Price Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/core-pce-price-index-61"
     },
     "core-pce-price-index-905": {
         "event": "Core PCE Price Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/core-pce-price-index-905"
     },
     "employment-benefits-1524": {
         "event": "Employment Benefits",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/employment-benefits-1524"
     },
     "employment-cost-index-331": {
         "event": "Employment Cost Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/employment-cost-index-331"
     },
     "employment-wages-1526": {
         "event": "Employment Wages",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/employment-wages-1526"
     },
@@ -394,224 +394,224 @@
     "jobless-claims-4-week-avg.-1041": {
         "event": "Jobless Claims 4-Week Avg.",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/jobless-claims-4-week-avg.-1041"
     },
     "pce-price-index-906": {
         "event": "PCE Price index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/pce-price-index-906"
     },
     "pce-price-index-904": {
         "event": "PCE price index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/pce-price-index-904"
     },
     "personal-income-234": {
         "event": "Personal Income",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/personal-income-234"
     },
     "personal-spending-235": {
         "event": "Personal Spending",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/personal-spending-235"
     },
     "real-personal-consumption-895": {
         "event": "Real Personal Consumption",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/real-personal-consumption-895"
     },
     "chicago-pmi-38": {
         "event": "Chicago PMI",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/chicago-pmi-38"
     },
     "natural-gas-storage-386": {
         "event": "Natural Gas Storage",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/natural-gas-storage-386"
     },
     "4-week-bill-auction-567": {
         "event": "4-Week Bill Auction",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/4-week-bill-auction-567"
     },
     "8-week-bill-auction-1801": {
         "event": "8-Week Bill Auction",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/8-week-bill-auction-1801"
     },
     "opec-crude-oil-production-algeria-(barrel)-1951": {
         "event": "OPEC Crude Oil Production Algeria",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/opec-crude-oil-production-algeria-(barrel)-1951"
     },
     "opec-crude-oil-production-congo-(barrel)-1954": {
         "event": "OPEC Crude Oil Production Congo",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/opec-crude-oil-production-congo-(barrel)-1954"
     },
     "opec-crude-oil-production-gabon-(barrel)-1952": {
         "event": "OPEC Crude Oil Production Gabon",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/opec-crude-oil-production-gabon-(barrel)-1952"
     },
     "opec-crude-oil-production-guinea-(barrel)-1956": {
         "event": "OPEC Crude Oil Production Guinea",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/opec-crude-oil-production-guinea-(barrel)-1956"
     },
     "opec-crude-oil-production-iran-(barrel)-1944": {
         "event": "OPEC Crude oil Production Iran",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/opec-crude-oil-production-iran-(barrel)-1944"
     },
     "opec-crude-oil-production-iraq-(barrel)-1860": {
         "event": "OPEC Crude oil Production Iraq",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/opec-crude-oil-production-iraq-(barrel)-1860"
     },
     "opec-crude-oil-production-kuwait-(barrel)-1948": {
         "event": "OPEC Crude Oil Production Kuwait",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/opec-crude-oil-production-kuwait-(barrel)-1948"
     },
     "opec-crude-oil-production-libya-(barrel)-1949": {
         "event": "OPEC Crude Oil Production Libya",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/opec-crude-oil-production-libya-(barrel)-1949"
     },
     "opec-crude-oil-production-nigeria-(barrel)-1950": {
         "event": "OPEC Crude Oil Production Nigeria",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/opec-crude-oil-production-nigeria-(barrel)-1950"
     },
     "opec-crude-oil-production-saudi-arabia-(barrel)-1945": {
         "event": "OPEC Crude oil Production Saudi Arabia",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/opec-crude-oil-production-saudi-arabia-(barrel)-1945"
     },
     "opec-crude-oil-production-uae-(barrel)-1947": {
         "event": "OPEC Crude oil Production UAE",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/opec-crude-oil-production-uae-(barrel)-1947"
     },
     "opec-crude-oil-production-venezuela-(barrel)-1946": {
         "event": "OPEC Crude oil Production Venezuela",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/opec-crude-oil-production-venezuela-(barrel)-1946"
     },
     "fed's-balance-sheet-2145": {
         "event": "Fed's Balance Sheet",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/fed's-balance-sheet-2145"
     },
     "reserve-balances-with-federal-reserve-banks-2120": {
         "event": "Reserve Balances with Federal Reserve Banks",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/reserve-balances-with-federal-reserve-banks-2120"
     },
     "average-hourly-earnings-1777": {
         "event": "Average Hourly Earnings",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/average-hourly-earnings-1777"
     },
     "average-hourly-earnings-8": {
         "event": "Average Hourly Earnings",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/average-hourly-earnings-8"
     },
     "average-weekly-hours-379": {
         "event": "Average Weekly Hours",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/average-weekly-hours-379"
     },
     "government-payrolls-1579": {
         "event": "Government Payrolls",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/government-payrolls-1579"
     },
     "manufacturing-payrolls-1531": {
         "event": "Manufacturing Payrolls",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/manufacturing-payrolls-1531"
     },
     "nonfarm-payrolls-227": {
         "event": "Nonfarm Payrolls",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/nonfarm-payrolls-227"
     },
     "participation-rate-1581": {
         "event": "Participation Rate",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/participation-rate-1581"
     },
     "private-nonfarm-payrolls-528": {
         "event": "Private Nonfarm Payrolls",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/private-nonfarm-payrolls-528"
     },
@@ -632,189 +632,189 @@
     "manufacturing-pmi-829": {
         "event": "S&P Global US Manufacturing PMI",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/manufacturing-pmi-829"
     },
     "construction-spending-45": {
         "event": "Construction Spending",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/construction-spending-45"
     },
     "ism-manufacturing-employment-1046": {
         "event": "ISM Manufacturing Employment",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/ism-manufacturing-employment-1046"
     },
     "ism-manufacturing-new-orders-index-1483": {
         "event": "ISM Manufacturing New Orders Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/ism-manufacturing-new-orders-index-1483"
     },
     "ism-manufacturing-pmi-173": {
         "event": "ISM Manufacturing PMI",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/ism-manufacturing-pmi-173"
     },
     "ism-manufacturing-prices-174": {
         "event": "ISM Manufacturing Prices",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/ism-manufacturing-prices-174"
     },
     "baker-hughes-u.s.-rig-count-1652": {
         "event": "U.S. Baker Hughes Oil Rig Count",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/baker-hughes-u.s.-rig-count-1652"
     },
     "u.s.-baker-hughes-total-rig-count-1810": {
         "event": "U.S. Baker Hughes Total Rig Count",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/u.s.-baker-hughes-total-rig-count-1810"
     },
     "cftc-aluminium-speculative-net-positions-1821": {
         "event": "CFTC Aluminium speculative net positions",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/cftc-aluminium-speculative-net-positions-1821"
     },
     "cftc-copper-speculative-positions-1620": {
         "event": "CFTC Copper speculative net positions",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/cftc-copper-speculative-positions-1620"
     },
     "cftc-corn-speculative-positions-1813": {
         "event": "CFTC Corn speculative net positions",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/cftc-corn-speculative-positions-1813"
     },
     "cftc-crude-oil-speculative-positions-1653": {
         "event": "CFTC Crude Oil speculative net positions",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/cftc-crude-oil-speculative-positions-1653"
     },
     "cftc-gold-speculative-positions-1618": {
         "event": "CFTC Gold speculative net positions",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/cftc-gold-speculative-positions-1618"
     },
     "cftc-nasdaq-100-speculative-positions-1959": {
         "event": "CFTC Nasdaq 100 speculative net positions",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/cftc-nasdaq-100-speculative-positions-1959"
     },
     "cftc-natural-gas-speculative-positions-1820": {
         "event": "CFTC Natural Gas speculative net positions",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/cftc-natural-gas-speculative-positions-1820"
     },
     "cftc-s-p-500-speculative-positions-1619": {
         "event": "CFTC S&P 500 speculative net positions",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/cftc-s-p-500-speculative-positions-1619"
     },
     "cftc-silver-speculative-positions-1621": {
         "event": "CFTC Silver speculative net positions",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/cftc-silver-speculative-positions-1621"
     },
     "cftc-soybeans-speculative-positions-1811": {
         "event": "CFTC Soybeans speculative net positions",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/cftc-soybeans-speculative-positions-1811"
     },
     "cftc-wheat-speculative-positions-1812": {
         "event": "CFTC Wheat speculative net positions",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/cftc-wheat-speculative-positions-1812"
     },
     "all-car-sales-886": {
         "event": "All Car Sales",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/all-car-sales-886"
     },
     "all-truck-sales-1437": {
         "event": "All Truck Sales",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/all-truck-sales-1437"
     },
     "cb-employment-trends-index-660": {
         "event": "CB Employment Trends Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/cb-employment-trends-index-660"
     },
     "durables-excluding-defense-1446": {
         "event": "Durables Excluding Defense",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/durables-excluding-defense-1446"
     },
     "durables-excluding-transport-2030": {
         "event": "Durables Excluding Transport",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/durables-excluding-transport-2030"
     },
     "factory-orders-100": {
         "event": "Factory Orders",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/factory-orders-100"
     },
     "factory-orders-ex-transportation-893": {
         "event": "Factory orders ex transportation",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/factory-orders-ex-transportation-893"
     },
     "3-year-note-auction-681": {
         "event": "3-Year Note Auction",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/3-year-note-auction-681"
     },
@@ -828,126 +828,126 @@
     "exports-1762": {
         "event": "Exports",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/exports-1762"
     },
     "imports-1763": {
         "event": "Imports",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/imports-1763"
     },
     "trade-balance-286": {
         "event": "Trade Balance",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/trade-balance-286"
     },
     "s-p-global-composite-pmi-1492": {
         "event": "S&P Global Composite PMI",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/s-p-global-composite-pmi-1492"
     },
     "services-pmi-1062": {
         "event": "S&P Global Services PMI",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/services-pmi-1062"
     },
     "ism-non-manufacturing-business-activity-1484": {
         "event": "ISM Non-Manufacturing Business Activity",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/ism-non-manufacturing-business-activity-1484"
     },
     "ism-non-manufacturing-employment-1048": {
         "event": "ISM Non-Manufacturing Employment",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/ism-non-manufacturing-employment-1048"
     },
     "ism-non-manufacturing-new-orders-1050": {
         "event": "ISM Non-Manufacturing New Orders",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/ism-non-manufacturing-new-orders-1050"
     },
     "ism-non-manufacturing-pmi-176": {
         "event": "ISM Non-Manufacturing PMI",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/ism-non-manufacturing-pmi-176"
     },
     "ism-non-manufacturing-prices-1049": {
         "event": "ISM Non-Manufacturing Prices",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/ism-non-manufacturing-prices-1049"
     },
     "total-vehicle-sales-85": {
         "event": "Total Vehicle Sales",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/total-vehicle-sales-85"
     },
     "10-year-note-auction-571": {
         "event": "10-Year Note Auction",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/10-year-note-auction-571"
     },
     "30-year-bond-auction-572": {
         "event": "30-Year Bond Auction",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/30-year-bond-auction-572"
     },
     "nonfarm-productivity-228": {
         "event": "Nonfarm Productivity",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/nonfarm-productivity-228"
     },
     "unit-labor-costs-303": {
         "event": "Unit Labor Costs",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/unit-labor-costs-303"
     },
     "wholesale-trade-sales-1765": {
         "event": "Wholesale Trade Sales",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/wholesale-trade-sales-1765"
     },
     "fomc-statement-398": {
         "event": "FOMC Statement",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/fomc-statement-398"
     },
     "interest-rate-decision-168": {
         "event": "Fed Interest Rate Decision",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/interest-rate-decision-168"
     },
@@ -961,42 +961,42 @@
     "consumer-credit-52": {
         "event": "Consumer Credit",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/consumer-credit-52"
     },
     "michigan-1-year-inflation-expectations-389": {
         "event": "Michigan 1-Year Inflation Expectations",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/michigan-1-year-inflation-expectations-389"
     },
     "michigan-5-year-inflation-expectations-1568": {
         "event": "Michigan 5-Year Inflation Expectations",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/michigan-5-year-inflation-expectations-1568"
     },
     "michigan-consumer-expectations-900": {
         "event": "Michigan Consumer Expectations",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/michigan-consumer-expectations-900"
     },
     "michigan-consumer-sentiment-320": {
         "event": "Michigan Consumer Sentiment",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/michigan-consumer-sentiment-320"
     },
     "michigan-current-conditions-901": {
         "event": "Michigan Current Conditions",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/michigan-current-conditions-901"
     },
@@ -1017,7 +1017,7 @@
     "nfib-small-business-optimism-537": {
         "event": "NFIB Small Business Optimism",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/nfib-small-business-optimism-537"
     },
@@ -1038,7 +1038,7 @@
     "ibd-tipp-economic-optimism-325": {
         "event": "IBD/TIPP Economic Optimism",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/ibd-tipp-economic-optimism-325"
     },
@@ -1052,7 +1052,7 @@
     "ny-fed-1-year-consumer-inflation-expectations-2024": {
         "event": "NY Fed 1-Year Consumer Inflation Expectations",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/ny-fed-1-year-consumer-inflation-expectations-2024"
     },
@@ -1080,63 +1080,63 @@
     "core-cpi-56": {
         "event": "Core CPI",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/core-cpi-56"
     },
     "core-cpi-736": {
         "event": "Core CPI",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/core-cpi-736"
     },
     "core-cpi-index-1226": {
         "event": "Core CPI Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/core-cpi-index-1226"
     },
     "cpi-733": {
         "event": "CPI",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/cpi-733"
     },
     "cpi-69": {
         "event": "CPI",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/cpi-69"
     },
     "cpi-index,-n.s.a.-1549": {
         "event": "CPI Index, n.s.a.",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/cpi-index,-n.s.a.-1549"
     },
     "cpi-index,-s.a-1889": {
         "event": "CPI Index, s.a",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/cpi-index,-s.a-1889"
     },
     "cpi,-n.s.a-1888": {
         "event": "CPI, n.s.a",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/cpi,-n.s.a-1888"
     },
     "real-earnings-890": {
         "event": "Real Earnings",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/real-earnings-890"
     },
@@ -1157,14 +1157,14 @@
     "cleveland-cpi-887": {
         "event": "Cleveland CPI",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/cleveland-cpi-887"
     },
     "thomson-reuters-ipsos-pcsi-1879": {
         "event": "Thomson Reuters IPSOS PCSI",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/thomson-reuters-ipsos-pcsi-1879"
     },
@@ -1178,7 +1178,7 @@
     "federal-budget-balance-369": {
         "event": "Federal Budget Balance",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/federal-budget-balance-369"
     },
@@ -1192,42 +1192,42 @@
     "ppi-ex.-food-energy-trade-2049": {
         "event": "PPI ex. Food/Energy/Transport",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/ppi-ex.-food-energy-trade-2049"
     },
     "ppi-ex.-food-energy-trade-2048": {
         "event": "PPI ex. Food/Energy/Transport",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/ppi-ex.-food-energy-trade-2048"
     },
     "core-ppi-62": {
         "event": "Core PPI",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/core-ppi-62"
     },
     "core-ppi-735": {
         "event": "Core PPI",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/core-ppi-735"
     },
     "ppi-734": {
         "event": "PPI",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/ppi-734"
     },
     "ppi-238": {
         "event": "PPI",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/ppi-238"
     },
@@ -1241,70 +1241,70 @@
     "core-retail-sales-63": {
         "event": "Core Retail Sales",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/core-retail-sales-63"
     },
     "export-price-index-1748": {
         "event": "Export Price Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/export-price-index-1748"
     },
     "export-price-index-892": {
         "event": "Export Price Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/export-price-index-892"
     },
     "import-price-index-1747": {
         "event": "Import Price Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/import-price-index-1747"
     },
     "import-price-index-153": {
         "event": "Import Price Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/import-price-index-153"
     },
     "ny-empire-state-manufacturing-index-323": {
         "event": "NY Empire State Manufacturing Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/ny-empire-state-manufacturing-index-323"
     },
     "retail-control-1506": {
         "event": "Retail Control",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/retail-control-1506"
     },
     "retail-sales-1878": {
         "event": "Retail Sales",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/retail-sales-1878"
     },
     "retail-sales-256": {
         "event": "Retail Sales",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/retail-sales-256"
     },
     "retail-sales-ex-gas-autos-1507": {
         "event": "Retail Sales Ex Gas/Autos",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/retail-sales-ex-gas-autos-1507"
     },
@@ -1318,35 +1318,35 @@
     "capacity-utilization-rate-31": {
         "event": "Capacity Utilization Rate",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/capacity-utilization-rate-31"
     },
     "industrial-production-1755": {
         "event": "Industrial Production",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/industrial-production-1755"
     },
     "industrial-production-161": {
         "event": "Industrial Production",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/industrial-production-161"
     },
     "manufacturing-output-1307": {
         "event": "Manufacturing Production",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/manufacturing-output-1307"
     },
     "business-inventories-29": {
         "event": "Business Inventories",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/business-inventories-29"
     },
@@ -1360,63 +1360,63 @@
     "nahb-housing-market-index-218": {
         "event": "NAHB Housing Market Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/nahb-housing-market-index-218"
     },
     "foreign-buying,-t-bonds-654": {
         "event": "US Foreign Buying, T-bonds",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/foreign-buying,-t-bonds-654"
     },
     "overall-net-capital-flow-663": {
         "event": "Overall Net Capital Flow",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/overall-net-capital-flow-663"
     },
     "tic-net-long-term-transactions-283": {
         "event": "TIC Net Long-Term Transactions",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/tic-net-long-term-transactions-283"
     },
     "tic-net-long-term-transactions-including-swaps-903": {
         "event": "TIC Net Long-Term Transactions including Swaps",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/tic-net-long-term-transactions-including-swaps-903"
     },
     "building-permits-25": {
         "event": "Building Permits",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/building-permits-25"
     },
     "building-permits-885": {
         "event": "Building Permits",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/building-permits-885"
     },
     "housing-starts-898": {
         "event": "Housing Starts",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/housing-starts-898"
     },
     "housing-starts-151": {
         "event": "Housing Starts",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/housing-starts-151"
     },
@@ -1430,91 +1430,91 @@
     "20-year-bond-auction-1983": {
         "event": "20-Year Bond Auction",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/20-year-bond-auction-1983"
     },
     "philadelphia-fed-manufacturing-index-236": {
         "event": "Philadelphia Fed Manufacturing Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/philadelphia-fed-manufacturing-index-236"
     },
     "philly-fed-business-conditions-907": {
         "event": "Philly Fed Business Conditions",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/philly-fed-business-conditions-907"
     },
     "philly-fed-capex-index-1501": {
         "event": "Philly Fed CAPEX Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/philly-fed-capex-index-1501"
     },
     "philly-fed-employment-908": {
         "event": "Philly Fed Employment",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/philly-fed-employment-908"
     },
     "philly-fed-new-orders-1502": {
         "event": "Philly Fed New Orders",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/philly-fed-new-orders-1502"
     },
     "philly-fed-prices-paid-1503": {
         "event": "Philly Fed Prices Paid",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/philly-fed-prices-paid-1503"
     },
     "existing-home-sales-891": {
         "event": "Existing Home Sales",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/existing-home-sales-891"
     },
     "existing-home-sales-99": {
         "event": "Existing Home Sales",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/existing-home-sales-99"
     },
     "us-leading-index-1968": {
         "event": "US Leading Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/us-leading-index-1968"
     },
     "kc-fed-composite-index-662": {
         "event": "KC Fed Composite Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/kc-fed-composite-index-662"
     },
     "kc-fed-manufacturing-index-899": {
         "event": "KC Fed Manufacturing Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/kc-fed-manufacturing-index-899"
     },
     "10-year-tips-auction-1038": {
         "event": "10-Year TIPS Auction",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/10-year-tips-auction-1038"
     },
@@ -1528,84 +1528,84 @@
     "chicago-fed-national-activity-523": {
         "event": "Chicago Fed National Activity",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/chicago-fed-national-activity-523"
     },
     "new-home-sales-896": {
         "event": "New Home Sales",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/new-home-sales-896"
     },
     "new-home-sales-222": {
         "event": "New Home Sales",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/new-home-sales-222"
     },
     "richmond-manufacturing-index-263": {
         "event": "Richmond Manufacturing Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/richmond-manufacturing-index-263"
     },
     "richmond-manufacturing-shipments-1510": {
         "event": "Richmond Manufacturing Shipments",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/richmond-manufacturing-shipments-1510"
     },
     "richmond-services-index-1511": {
         "event": "Richmond Services Index",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/richmond-services-index-1511"
     },
     "us-m2-money-supply-1999": {
         "event": "M2 Money Supply",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "Negative",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/us-m2-money-supply-1999"
     },
     "fomc-meeting-minutes-108": {
         "event": "FOMC Meeting Minutes",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/fomc-meeting-minutes-108"
     },
     "core-durable-goods-orders-59": {
         "event": "Core Durable Goods Orders",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 2,
         "link": "https://www.investing.com/economic-calendar/core-durable-goods-orders-59"
     },
     "corporate-profits-1315": {
         "event": "Corporate Profits",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/corporate-profits-1315"
     },
     "durable-goods-orders-86": {
         "event": "Durable Goods Orders",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 3,
         "link": "https://www.investing.com/economic-calendar/durable-goods-orders-86"
     },
     "goods-orders-non-defense-ex-air-1047": {
         "event": "Goods Orders Non Defense Ex Air",
         "currency": "USD",
-        "pn_indicator": "",
+        "pn_indicator": "positive",
         "importance": 1,
         "link": "https://www.investing.com/economic-calendar/goods-orders-non-defense-ex-air-1047"
     }
