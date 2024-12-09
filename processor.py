@@ -39,7 +39,7 @@ class SignalProcessor:
         for d in dataset:
             # Match the event name to the positivity mapping
             pn = event_data_json.get(d.id)
-            pn_indicator = pn.get("pn_indicator") if pn else None
+            pn_indicator = pn.get("pn_indicator").lower() if pn else None
             d.set_pn_indicator(pn_indicator)
         return dataset
     
@@ -104,7 +104,7 @@ class SignalProcessor:
                     signal = SignalLevel.NEUTRAL.value
 
             # Adjust for P/N indicator
-            if pn_indicator == "Negative":
+            if pn_indicator == "negative":
                 if SignalLevel.BUY.value in signal:
                     signal = signal.replace(SignalLevel.BUY.value, SignalLevel.SELL.value)
                 elif SignalLevel.SELL.value in signal:

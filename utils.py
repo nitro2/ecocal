@@ -132,9 +132,9 @@ def prettify_dataset(dataset):
 
         pn_indicator = d.pn_indicator
         if Config.USE_COLORS:
-            # if pn_indicator == "Positive":
+            # if pn_indicator == "positive":
                 # pn_indicator = Fore.GREEN + pn_indicator + Style.RESET_ALL
-            if pn_indicator == "Negative":
+            if pn_indicator == "negative":
                 pn_indicator = Fore.RED + pn_indicator + Style.RESET_ALL
 
         # Add d to table
