@@ -12,10 +12,10 @@ def run_task():
     fetcher = Fetcher(Config.BASE_URL, target_timezone=Config.TARGET_TIMEZONE)
     processor = SignalProcessor()
 
-    data = fetcher.fetch_data()
-    if data:
+    dataset = fetcher.fetch_data()
+    if dataset:
         # Aggregate and classify signals for the data
-        overall_signal = processor.aggregate_signals(data)
+        overall_signal = processor.aggregate_signals(dataset)
         print(f"Overall Signal: {overall_signal}")
     else:
         print("No data fetched.")

@@ -55,27 +55,17 @@ project/
   - Fetch raw HTML data from the economic calendar.
   - Parse and filter rows where the currency is `USD`.
   - Handle missing or malformed data gracefully.
-- **Key Methods**:
-  - `fetch_data()`: Retrieves and parses economic calendar data.
-  - `_filter_us_data(rows)`: Filters rows for US-specific events.
-  - `_parse_value(value)`: Converts string values to numerical format (e.g., `6.3%` → `6.3`).
 
 ### 2. **`processor.py`**
 - **Purpose**: Processes fetched data and classifies Buy/Sell signals.
 - **Key Responsibilities**:
   - Classify individual signals using the `Actual`, `Forecast`, and `Previous` values.
   - Generate an aggregate signal for events occurring at the same time.
-- **Key Methods**:
-  - `classify_signal(actual, forecast, previous)`: Returns signal levels (e.g., `Strong Buy`, `Neutral`).
-  - `aggregate_signals(rows)`: Computes an overall signal for overlapping events.
 
 ### 3. **`scheduler.py`**
 - **Purpose**: Manages the periodic execution of tasks.
 - **Key Responsibilities**:
   - Run tasks hourly or at critical times (e.g., every 2 seconds at 22:00 on Wednesdays).
-- **Key Methods**:
-  - `schedule_tasks(task_function)`: Configures the task schedule.
-  - `run_forever()`: Starts the scheduler loop.
 
 ### 4. **`config.py`**
 - **Purpose**: Stores project configurations.
@@ -85,10 +75,6 @@ project/
 
 ### 5. **`utils.py`**
 - **Purpose**: Provides reusable utility functions.
-- **Key Functions**:
-  - `log_error(message)`: Logs error messages with timestamps.
-  - `log_info(message)`: Logs informational messages.
-  - `parse_time(time_str)`: Parses string times into `datetime` objects.
 
 ### 6. **`main.py`**
 - **Purpose**: Integrates all modules and acts as the entry point for the program.

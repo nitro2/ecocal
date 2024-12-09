@@ -1,6 +1,6 @@
 import os
 import argparse
-from utils import prettify_rows
+from utils import prettify_dataset
 from fetcher import Fetcher
 from config import Config
 
@@ -20,7 +20,7 @@ def test_sample_html_parsing(input_file):
     # print("Parsed data from sample HTML:")
     # for entry in parsed_data:
     #     print(entry)
-    prettify_rows(data)
+    prettify_dataset(data)
 
 def main():
     # Parse command line arguments

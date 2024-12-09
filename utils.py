@@ -66,21 +66,20 @@ def convert_time_to_timezone(time_str):
         print(f"Error in time conversion: {e}")
         return time_str  # Return original time if conversion fails
 
-def prettify_rows(rows):
+def prettify_dataset(dataset):
     """
-    Prettify and print rows with alignment for console output, including color handling for Value objects.
-    :param rows: List of dictionaries containing row data.
+    Prettify and print dataset with alignment for console output, including color handling for Value objects.
+    :param dataset: List of dictionaries containing row data.
     """
     # Apply currency filter
-    rows = [
-        row
-        for row in rows
-        if (Config.PRINT_CURRENCIES and row.get("currency") in Config.PRINT_CURRENCIES)
-            and (Config.IMPORTANCE_FILTER and row.get("importance") >= Config.IMPORTANCE_FILTER)
+    dataset = [
+        d for d in dataset
+        if (Config.PRINT_CURRENCIES and d.currency in Config.PRINT_CURRENCIES)
+            and (Config.IMPORTANCE_FILTER and d.importance >= Config.IMPORTANCE_FILTER)
     ]
 
-    # If no rows match the filter, exit early
-    if not rows:
+    # If no dataset match the filter, exit early
+    if not dataset:
         print("No rows to display after applying currency filter.")
         return
 
@@ -89,19 +88,19 @@ def prettify_rows(rows):
 
     # Prepare table data
     table_data = []
-    for idx, row in enumerate(rows):
+    for idx, d in enumerate(dataset):
         # Style importance
-        importance = "*" * row.get("importance", 0)
+        importance = "*" * d.importance
         if Config.USE_COLORS:
-            if row.get("importance", 0) == 3:
+            if importance == 3:
                 importance = Fore.RED + importance + Style.RESET_ALL
-            elif row.get("importance", 0) == 2:
+            elif importance == 2:
                 importance = Fore.YELLOW + importance + Style.RESET_ALL
-            elif row.get("importance", 0) == 1:
+            elif importance == 1:
                 importance = Fore.GREEN + importance + Style.RESET_ALL
 
         # Style signal
-        signal = row.get("signal", "")
+        signal = d.signal
         if Config.USE_COLORS:
             if signal == "Strong Buy":
                 signal = Fore.GREEN + signal + Style.RESET_ALL
@@ -109,7 +108,7 @@ def prettify_rows(rows):
                 signal = Fore.RED + signal + Style.RESET_ALL
 
         # Style event
-        event = row.get("event", "_")
+        event = d.event
         if Config.USE_COLORS:
             event = Fore.CYAN + event + Style.RESET_ALL
 
@@ -127,21 +126,21 @@ def prettify_rows(rows):
                     value = Fore.YELLOW + value + Style.RESET_ALL
             return value
 
-        actual = format_value(row.get("actual"))
-        forecast = format_value(row.get("forecast"))
-        previous = format_value(row.get("previous"))
+        actual = format_value(d.actual)
+        forecast = format_value(d.forecast)
+        previous = format_value(d.previous)
 
-        pn_indicator = row.get("pn_indicator", "")
+        pn_indicator = d.pn_indicator
         if Config.USE_COLORS:
             # if pn_indicator == "Positive":
                 # pn_indicator = Fore.GREEN + pn_indicator + Style.RESET_ALL
             if pn_indicator == "Negative":
                 pn_indicator = Fore.RED + pn_indicator + Style.RESET_ALL
 
-        # Add row to table
+        # Add d to table
         table_data.append([
-            row.get("time", "_"),
-            row.get("currency", "_"),
+            d.time,
+            d.currency,
             importance,
             event,
             actual,

@@ -80,16 +80,16 @@ class Fetcher:
                 previous = parse_value(previous_cell)
 
                 # Append parsed data
-                extracted_data.append({
-                    "time": time,
-                    "currency": currency,
-                    "event": event,
-                    "id": id,
-                    "importance": importance,
-                    "actual": actual,
-                    "forecast": forecast,
-                    "previous": previous,
-                })
+                extracted_data.append(data.Data(
+                    time=time, 
+                    currency=currency,
+                    event=event,
+                    id=id,
+                    importance=importance,
+                    actual=actual,
+                    forecast=forecast,
+                    previous=previous,
+                ))
             except Exception as e:
                 log_error(f"Error parsing row: {e}")
 

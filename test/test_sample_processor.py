@@ -2,12 +2,12 @@ import sys
 import os
 from fetcher import Fetcher
 from processor import SignalProcessor
-from utils import prettify_rows
+from utils import prettify_dataset
 from config import Config
 
 import os
 import argparse
-from utils import prettify_rows
+from utils import prettify_dataset
 from fetcher import Fetcher
 
 def test_sample_processor(input_file):
@@ -21,14 +21,11 @@ def test_sample_processor(input_file):
 
 
     fetcher = Fetcher(Config.BASE_URL, target_timezone=Config.TARGET_TIMEZONE)
-    rows = fetcher.read_data(input_file)
+    dataset = fetcher.read_data(input_file)
     processor = SignalProcessor()
 
-    # Add Positive/Negative indicators to rows
-    rows_with_pn = processor.add_pn_indicator(rows)
-
     # Aggregate signals and prettify rows
-    aggregated_signal = processor.aggregate_signals(rows_with_pn)
+    aggregated_signal = processor.aggregate_signals(dataset)
     print(f"Overall Signal: {aggregated_signal}")
 
 
